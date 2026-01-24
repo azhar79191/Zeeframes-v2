@@ -1,7 +1,7 @@
 import SectionHeader from '@/components/SectionHeader'
 import React from 'react'
 import { Button } from '@/components/ui/button'
-import InsightCard from '@/components/insightCard'
+import InsightCard from '@/components/InsightCard'
 import insight1 from "@/assets/images/insight1.png";
 import insight2 from "@/assets/images/insight2.png";
 import insight3 from "@/assets/images/insight3.png";
