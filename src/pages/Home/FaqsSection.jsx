@@ -78,7 +78,7 @@ const FaqsSection = () => {
                                         className="w-full flex items-center justify-between p-5 text-left"
                                     >
                                         <h3
-                                            className="text-base font-medium text-white"
+                                            className="text-base font-['Geologica'] font-medium text-white"
                                         >
                                             {item.question}
                                         </h3>

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Arrowup1 } from "@/assets/images";
 
 const VideoSection = () => {
     const navigate = useNavigate();
@@ -54,39 +55,17 @@ const VideoSection = () => {
 
             {/* Floating Cursor Button */}
             <Button
-            variant="desturctive"
+                variant="destructive"
+                size="destructive"
                 ref={buttonRef}
                 onClick={() => navigate("/contact")}
                 className={`pointer-events-auto absolute top-0 left-0
-          bg-white text-black rounded-3xl px-6 py-4
-          flex items-center gap-2
           transition-opacity duration-300
           ${visible ? "opacity-100" : "opacity-0 pointer-events-none"}
         `}
             >
                 All Works
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                >
-                    <path
-                        d="M14.5833 5.4165L5 14.9998"
-                        stroke="#0B0B0B"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    />
-                    <path
-                        d="M6.66669 5H15V13.3333"
-                        stroke="#0B0B0B"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    />
-                </svg>
+                <Arrowup1/>    
             </Button>
         </section>
     );

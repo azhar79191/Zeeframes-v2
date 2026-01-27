@@ -25,7 +25,7 @@ const ShowcaseCard = ({
                 <p className=" text-2xl text-white font-medium w-100">
                     {description}
                 </p>
-                    <span className="flex p-1 items-center justify-center rounded-full border border-[#B8B8B8] ">
+                    <span className="flex p-1 items-center justify-center w-5 h-5 shrink-0 rounded-full border border-[#B8B8B8] ">
                         <ArrowUpRight className="text-white" />
                     </span>
                 </div>

@@ -12,7 +12,7 @@ const ServicesSection = ({ tag, title, image }) => {
         title="Our Services"
         description="Designs with Exceptional User Experiences."
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-16">
 
         <ServiceCard
           tag="For Digital Experiences"

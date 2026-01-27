@@ -22,7 +22,7 @@ const AboutSection = () => {
                 <img src={about} alt="about" width="390" height="391" className='h-auto object-contain max-w-full'/>
                 <div className='flex flex-col  gap-12'>
                     <div className='flex flex-col items-start gap-4'>
-                          <p className="text-[#F3FE00] font-['Inter'] uppercase text-sm font-medium">about</p>
+                          <p className="text-[#F3FE00] ff_geologica uppercase text-sm font-medium">about</p>
                           <h2 className="text-white font-['Geologica'] text-[40px] leading-10 font-bold">Who We Are</h2>
                           <p className="text-[#D5D5D5] font-['Inter'] text-sm leading-[21px] max-w-142">ZeeFrames is a specialized UI UX design agency with a focus on creating exceptional digital experiences. ZeeFrames is committed to delivering the best user experience possible for your business.</p>
                     </div>

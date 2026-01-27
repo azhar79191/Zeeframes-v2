@@ -72,11 +72,11 @@ const Reviews = [
     }
 ]
 const SocialLinks = [
-    { img: Be, path: "https://be.com" },
-    { img: Linkden, path: "https://linkedin.com" },
-    { img: Instagram, path: "https://instagram.com" },
-    { img: X, path: "https://x.com" },
-    { img: Facebook, path: "https://facebook.com" },
+    { img: Be, to: "https://dribbble.com/zeeframes" },
+    { img: Linkden, to: "https://www.linkedin.com/company/zeeframes/" },
+    { img: Instagram, to: "https://www.instagram.com/zeeframes.design/" },
+    { img: X, to: "https://x.com" },
+    { img: Facebook, to: "https://www.facebook.com/zeeframes" },
 ]
 const Footer = () => {
   return (
@@ -98,10 +98,10 @@ const Footer = () => {
                       <p className='text-[#D5D5D5] text-lg leading-7 font-normal w-98'>We transform ideas into user-centered digital experiences for businesses worldwide, from Fortune 500s to startups, using Figma, Webflow, and no-code solutions.</p>
                       <div>
                           <p className='text-white text-base font-semibold leading-5'>Company</p>
-                          <ul className='flex flex-col gap-2 text-[#8F8F8F] mt-5 w-54'>
+                          <ul className='flex flex-col gap-2 text-[#8F8F8F]  mt-5 w-54'>
                               {company.map((item, index) => (
                                   <li>
-                                      <Link to={item.path} className='text-sm leading-5'>
+                                      <Link to={item.path} className='text-sm hover:text-[#E7E7E7] leading-5'>
                                           {item.text}
                                       </Link>
                                   </li>
@@ -110,10 +110,10 @@ const Footer = () => {
                       </div>
                       <div>
                               <p className='text-white text-base font-semibold leading-5'>Services</p>
-                          <ul className='flex flex-col gap-3.5 mt-5 text-[#8F8F8F] w-54'>
+                          <ul className='flex flex-col gap-3.5 mt-5 text-[#8F8F8F]  w-54'>
                               {Services.map((item, index) => (
                                   <li>
-                                      <Link to={item.path} className='text-sm leading-5'>
+                                      <Link to={item.path} className='text-sm hover:text-[#E7E7E7] leading-5'>
                                           {item.text}
                                       </Link>
                                   </li>
@@ -122,10 +122,10 @@ const Footer = () => {
                       </div>
                       <div>
                               <p className='text-white text-base font-semibold leading-5 pb-5'>Reviews</p>
-                          <ul className='flex flex-col gap-3.5 text-[#8F8F8F] w-54'>
+                          <ul className='flex flex-col gap-3.5 text-[#8F8F8F]  w-54'>
                               {Reviews.map((item, index) => (
                                   <li>
-                                      <Link to={item.path} className='text-sm leading-5'>
+                                      <Link to={item.path} className='text-sm hover:text-[#E7E7E7] leading-5'>
                                           {item.text}
                                       </Link>
                                   </li>
@@ -166,9 +166,9 @@ const Footer = () => {
                       <ul className='flex gap-4'>
                         {SocialLinks.map((item,index)=>(
                           <li key={index}>
-                            <a href={item.path} target="_blank" rel="noopener noreferrer">
+                            <Link to={item.to} target="_blank" rel="noopener noreferrer">
                               <img src={item.img} alt={item.name} className='w-10 h-10' />
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>

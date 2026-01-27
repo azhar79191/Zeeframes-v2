@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import React from 'react'
 import gif from "@/assets/images/spining-star-BHYjMLGF.gif"
 import bg from "@/assets/images/gradient-bg.webp"
+import { Arrowup1 } from '@/assets/images'
 
 const DesignSection = () => {
     return (
@@ -11,7 +12,7 @@ const DesignSection = () => {
         >
             <div className="container flex items-center justify-between">
                 <div>
-                    <h2 className="text-7xl max-w-4xl font-bold text-white leading-21">
+                    <h2 className="text-[70px] ff_geologica max-w-4xl font-bold text-white leading-21">
                         Design That Thinks. Interfaces That Feel.
                     </h2>
 
@@ -19,16 +20,13 @@ const DesignSection = () => {
                         At ZeeFrames, we craft AI-ready design systems for modern software responsive, scalable, and human-centered.
                     </p>
 
-                    <Button className="mt-6 h-12 w-41">
-                        <span className="group-hover:hidden flex items-center gap-3 justify-center">
+                    <Button variant="default" size="default" className="relative group mt-6">
+                        <span className="flex items-center gap-3 justify-center transition-opacity group-hover:opacity-0">
                             See AI in Action
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M14.5833 5.4165L5 14.9998" stroke="#0B0B0B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M6.66669 5H15V13.3333" stroke="#0B0B0B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
+                            <Arrowup1/>
                         </span>
 
-                        <span className="hidden group-hover:block">
+                        <span className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover:opacity-100">
                             Let’s talk
                         </span>
                     </Button>

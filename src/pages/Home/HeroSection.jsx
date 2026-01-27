@@ -48,7 +48,7 @@ const HeroSection = () => {
                 <img src={star} alt="star" loading="lazy" />
             </div>
 
-            <div className="flex my-12 items-center gap-3  bg-black border border-[#1F1F1F] w-fit justify-center mx-auto p-2 rounded-md">
+            <div className="flex my-12 items-center gap-3 relative z-30 bg-[#0B0B0B] border border-[#1F1F1F] w-fit justify-center mx-auto p-2 rounded-md">
                 <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#F3FE00]">
                     <img src={logo} alt="logo" className="h-4" />
                 </span>
@@ -61,9 +61,12 @@ const HeroSection = () => {
                     {Icons.map((item, index) => (
                         <li
                             key={index}
-                            className="flex h-6 w-6 items-center justify-center -ms-1 rounded-full bg-[#1A1A1A] border border-black"
+                           className="flex items-center justify-center"
                         >
-                            {item.icon}
+                            <span className="-ms-[7px] w-[32px] h-[32px] rounded-full bg-[#303030] border border-[#0D0D0C] flex items-center justify-center transition-transform duration-300 ease-in-out group-hover:translate-x-[6px]">
+                                {item.icon}
+                            </span>
+                            
                         </li>
                     ))}
                 </ul>
@@ -71,16 +74,16 @@ const HeroSection = () => {
 
 
             <div className="relative text-center mt-12">
-                <h1 className="text-center text-7xl w-243 mx-auto font-extrabold leading-24 text-white">
-                    CREATIVE INTELLIGENCE IN EVERY PIXEL updated
+                <h1 className="text-center text-7xl w-243 uppercase ff_geologica mx-auto font-extrabold leading-24 text-[#FFF]">
+                    Creative Intelligence in Every Pixel
                 </h1>
 
-                <span className="absolute right-45 top-4 rounded-md rotate-7 bg-[#F3FE00] px-2 py-1 text-[10px] font-bold text-black">
+                <span className="absolute right-45 ff_geologica top-4 rounded-md rotate-7 bg-[#F3FE00] px-2 py-1 text-xs font-extrabold text-black">
                     NO CODE
                 </span>
             </div>
 
-            <p className="mx-auto mt-3 mb-12  text-xl text-gray-400 text-center">
+            <p className="mx-auto mt-3 mb-12 ff_geologica text-xl text-gray-400 text-center">
                 We Craft <span className="text-[#F3FE00]">Stunning</span> Designs For Businesses Worldwide.
             </p>
             <div className="mt-8 flex justify-center gap-4">
@@ -136,7 +139,7 @@ const HeroSection = () => {
 
 
             <div className="mt-6 mb-21 mx-30 overflow-hidden relative">
-                <div className="flex logo-track gap-8 w-max animate-logo-scroll">
+                <div className="flex logo-track gap-12 w-max animate-logo-scroll">
                     {[...logos, ...logos].map((logo, index) => (
                         <img
                             key={index}

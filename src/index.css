@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -127,7 +128,7 @@
 }
 
 body {
-font-family: "Geologica","Inter", system-ui, sans-serif;
+font-family:"Inter", system-ui, sans-serif;
 }
 
 .ff_geologica {
@@ -204,7 +205,6 @@ font-family: "Geologica","Inter", system-ui, sans-serif;
 .main-heading{
   color:  #F3FE00;
     text-align: start;
-    font-family: Inter;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;

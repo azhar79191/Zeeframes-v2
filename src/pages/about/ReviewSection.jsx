@@ -29,7 +29,7 @@ const ReviewSection = () => {
             {cardsData.map((item,index)=>(
                 <div className='flex flex-col gap-3'>
                     <div className='flex items-center gap-3'>
-                        <h2 className="text-sm leading-4 text-[#D5D5D5] font-['Inter'] text-nowrap">Reviewed on</h2>
+                        <h2 className="text-base leading-4 text-[#D5D5D5] font-['Inter'] text-nowrap">Reviewed on</h2>
                         <div className="flex items-center gap-1">
                             {[...Array(5)].map((_, i) => (
                                 <Stars key={i} className={item.starColor} />
@@ -57,7 +57,7 @@ const ReviewSection = () => {
                               ))}
                           </div>
 
-                      <p className="text-[#0B0B0B] text-sm w-22 leading-6 font-['Inter'] text-nowrap">Average Rating</p>
+                      <p className="text-[#0B0B0B] text-base w-22 leading-6 font-['Inter'] text-nowrap">Average Rating</p>
                   </div>
                   </div>
               </div>

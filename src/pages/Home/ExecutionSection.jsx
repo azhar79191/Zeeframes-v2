@@ -64,12 +64,13 @@ const processSteps = [
 const ExecutionSection = ({ tag, title, image }) => {
   const containerRef = useRef(null);
   const itemRefs = useRef([]);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(null);
 
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end end"],
-  });
+    const { scrollYProgress } = useScroll({
+        target: containerRef,
+        offset: ["start 40%", "end end"],
+    });
+
 
   const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
@@ -79,15 +80,20 @@ const ExecutionSection = ({ tag, title, image }) => {
     const containerHeight = containerRef.current.offsetHeight;
     const currentLineHeight = progress * containerHeight;
 
-    itemRefs.current.forEach((item, index) => {
-      if (!item) return;
+      let newActiveIndex = null;
 
-      const itemTop = item.offsetTop;
+      itemRefs.current.forEach((item, index) => {
+          if (!item) return;
 
-      if (currentLineHeight >= itemTop) {
-        setActiveIndex(index);
-      }
-    });
+          const itemTop = item.offsetTop;
+
+          if (currentLineHeight >= itemTop) {
+              newActiveIndex = index;
+          }
+      });
+
+      setActiveIndex(newActiveIndex);
+
   });
 
   return (
@@ -123,21 +129,21 @@ const ExecutionSection = ({ tag, title, image }) => {
                                   {/* NUMBER – LEFT OF LINE */}
                                   {isActive && (
                                       <div className="absolute -left-25 top-1 text-lg font-semibold text-white transition-opacity duration-300">
-                                          {String(step.id).padStart(1, "0")}
+                                          {String(step.id).padStart(2, "0")}
                                       </div>
                                   )}
 
 
                                   {/* CONTENT */}
                                   <h3
-                                      className={`text-4xl font-semibold transition-colors duration-300
+                                      className={`text-[19px] font-semibold ff_geologica transition-colors duration-300
             ${isActive ? "text-white" : "text-[#8F8F8F]"}`}
                                   >
                                       {step.title.replace(/^\d+\s/, "")}
                                   </h3>
 
                                   <p
-                                      className={`mt-1 text-sm transition-colors duration-300
+                                      className={`mt-1 text-lg transition-colors duration-300
             ${isActive ? "text-white" : "text-[#8F8F8F]"}`}
                                   >
                                       {step.subtitle}
@@ -158,14 +164,17 @@ const ExecutionSection = ({ tag, title, image }) => {
     
                 {/* RIGHT STICKY IMAGE */}
                 <div className="sticky top-30 h-126 w-132">
-                    <motion.img
-                        key={activeIndex}
-                        src={processSteps[activeIndex].image}
-                        initial={{ opacity: 0, y: 25 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.45 }}
-                        className="h-full w-full rounded-2xl object-cover"
-                    />
+                      {activeIndex !== null && (
+                          <motion.img
+                              key={activeIndex}
+                              src={processSteps[activeIndex].image}
+                              initial={{ opacity: 0, y: 25 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.45 }}
+                              className="h-full w-full rounded-2xl object-cover"
+                          />
+                      )}
+
                 </div>
       </div>
           </div>

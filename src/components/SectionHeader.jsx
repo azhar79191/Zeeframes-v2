@@ -14,12 +14,12 @@ const SectionHeader = ({
                 }`}
         >
             {/* Eyebrow text */}
-            <p className="text-sm font-medium uppercase text-[#F3FE00]">
+            <p className="text-sm font-['Geologica'] font-medium uppercase text-[#F3FE00]">
                 {eyebrow}
             </p>
 
             {/* Title */}
-            <h2 className={`text-[#FFF] text-[40px] font-bold leading-10 ${titleclassName}`}>
+            <h2 className={`text-[#FFF] text-[40px] font-['Geologica'] font-bold leading-10 ${titleclassName}`}>
                 {title}
             </h2>
 

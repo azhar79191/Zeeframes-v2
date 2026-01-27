@@ -36,7 +36,7 @@ const ValueSection = () => {
         <section className='py-20 bg-[#0D0D0D] relative z-50'>
             <div className='container'>
                 <div className='flex flex-col gap-6'>
-                    <p className='main-heading'>Our Value</p>
+                    <p className='main-heading ff_geologica'>Our Value</p>
                     <p className='description mb-20'>Together, we make perfect partners. We offer worry-free partnerships and deliver your vision into reality with our top-tier creativity. No fluff, just the good stuff.</p>
                 </div>
                 {valuesData.map((item, index) => (

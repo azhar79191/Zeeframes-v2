@@ -10,9 +10,9 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "group bg-[#F3FE00] w-fit h-12 text-[#0B0B0B] text-base font-semibold leading-6 cursor-pointer rounded-full transition-colors duration-300 hover:bg-transparent hover:text-white hover:border-1 hover:border-[#F3FE00]",
+          "group bg-[#F3FE00] w-fit h-12 text-[#0B0B0B] text-base font-semibold leading-6 cursor-pointer rounded-full transition-colors duration-300 hover:bg-transparent hover:text-white border border-transparent hover:border-[#F3FE00]",
         destructive:
-          "group bg-white text-[#0B0B0B] text-base font-semibold leading-6 cursor-pointer rounded-full transition-colors duration-300]",
+          "group bg-white text-[#0B0B0B] h-12 text-base font-semibold leading-6 cursor-pointer rounded-full transition-colors duration-300]",
         outline:
           "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
         secondary:
@@ -22,9 +22,9 @@ const buttonVariants = cva(
         link: "group bg-[#F3FE00] w-fit h-12 text-[#0B0B0B] border-2 border-[#FFF] text-base font-semibold leading-6 cursor-pointer rounded-full transition-colors duration-300 hover:bg-transparent hover:text-white hover:border-1 hover:border-[#F3FE00]",
       },
       size: {
-        default: "px-5 py-3 has-[>svg]:px-5",
+        default: "px-5 py-3.5 has-[>svg]:px-5",
         destructive: "px-8 py-3.5 has-[>svg]:px-5",
-        link:"px-6 py-4 w-fit",
+        link: "px-6 py-4 w-fit",
         sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
         lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
         icon: "size-9",
