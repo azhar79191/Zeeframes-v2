@@ -18,24 +18,42 @@ const ServicesSection = ({ tag, title, image }) => {
           tag="For Digital Experiences"
           title="UX UI Design"
           image={uxImg}
+          link="/services/ui-ux-design-main"
         />
 
         <ServiceCard
           tag="For Startups & Existing Companies"
           title="Product Revamp"
           image={uxImg}
+          link="/services/product-revamp-main"
         />
 
         <ServiceCard
           tag="For Visual Storytellers"
           title="Brand Design"
           image={uxImg}
+          link="/services/brand-design-main"
         />
 
         <ServiceCard
           tag="For Rapid App Builders"
-          title="Low Code Development"
+          title="No-Code Development"
           image={uxImg}
+          link="/services/nocode-development-main"
+        />
+
+        <ServiceCard
+            tag="FOR STARTUPS & FOUNDERS"
+          title="MVP Design"
+          image={uxImg}
+          link="/services/mvp-design-main"
+        />
+
+        <ServiceCard
+            tag="Dedicated ux ui Team"
+          title="Team Extension"
+          image={uxImg}
+          link="/services/team-extension-main"
         />
 
       </div>

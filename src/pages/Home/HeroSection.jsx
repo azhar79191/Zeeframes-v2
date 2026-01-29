@@ -57,13 +57,13 @@ const HeroSection = () => {
                     Trusted by startups to craft $100M+ designs with
                 </p>
 
-                <ul className="flex items-center -translate-x-2 mr-2 ml-2">
+                <ul className="flex items-center group -translate-x-2 mr-2 ml-2">
                     {Icons.map((item, index) => (
                         <li
                             key={index}
-                           className="flex items-center justify-center"
+                            className={`flex items-center justify-center transition-transform duration-300  ease-in-out ${index > 0 ? 'group-hover:translate-x-1' : ''}`}
                         >
-                            <span className="-ms-[7px] w-[32px] h-[32px] rounded-full bg-[#303030] border border-[#0D0D0C] flex items-center justify-center transition-transform duration-300 ease-in-out group-hover:translate-x-[6px]">
+                            <span className="-ms-[7px] w-[32px] h-[32px] rounded-full bg-[#303030] border border-[#0D0D0C] flex items-center justify-center">
                                 {item.icon}
                             </span>
                             
