@@ -7,9 +7,13 @@ import ServicesSection from "@/pages/Home/ServicesSection";
 import ShowcaseSection from "@/pages/Home/ShowcaseSection";
 import ContactFormSection from "@/pages/Home/contactFormSection";
 import VideoSection from "./VideoSection";
+import CursorGlow from "@/components/CursorGlow";
+import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
+
 const HomeView = () => {
   return (
     <>
+      <CursorGlow />
       <HeroSection />
       <VideoSection />
       <ServicesSection />
@@ -19,8 +23,11 @@ const HomeView = () => {
       <FaqsSection />
       <InsightSection />
       <ContactFormSection />
+
+      {/* Floating WhatsApp Button */}
+      <WhatsAppFloatingButton />
     </>
   );
-}
+};
 
-export default HomeView
+export default HomeView;

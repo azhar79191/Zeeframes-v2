@@ -9,7 +9,7 @@ import img5 from "@/assets/images/showcase5.png";
 import img6 from "@/assets/images/showcase6.png";
 const ShowCaseCards = () => {
   return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-10 gap-8 sm:mt-16 mt-8">
 
           <ShowcaseCard
               image={img1}
@@ -18,7 +18,7 @@ const ShowCaseCards = () => {
           />
 
           <ShowcaseCard
-              className="mt-30"
+              className="sm:mt-30"
               image={img2}
               title="Alfan"
               description="The Platform for Content Creators"
@@ -30,7 +30,7 @@ const ShowCaseCards = () => {
           />
 
           <ShowcaseCard
-              className="mt-30"
+              className="sm:mt-30"
               image={img4}
               title="Finnecta"
               description="Wallet application to streamline digital transactions"
@@ -41,7 +41,7 @@ const ShowCaseCards = () => {
               description="Clearbit, a business intelligence platform"
           />
           <ShowcaseCard
-              className="mt-30"
+              className="sm:mt-30"
               image={img6}
               title="Fastgo"
               description="Fastgo’s scooter rental app to drive adoption"

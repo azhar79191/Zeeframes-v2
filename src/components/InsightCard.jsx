@@ -18,7 +18,7 @@ const InsightCard = ({
                         alt={title}
                         height="246"
                         width="382"
-                        className="w-full h-full object-cover group-hover:scale-105 duration-300 "
+                        className="w-full sm:h-full h-[227px] object-cover group-hover:scale-105 duration-300 "
                     />
                 </div>
                 {/* Content */}

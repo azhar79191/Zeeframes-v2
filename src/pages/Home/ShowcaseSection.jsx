@@ -6,7 +6,7 @@ import { Arrowup1 } from '@/assets/images';
 
 const ShowcaseSection = () => {
   return (
-      <section className="py-20">
+      <section className="am:py-20 py-8">
         <div className="container">
           <SectionHeader
               eyebrow="how we helped others succeed"
@@ -19,7 +19,7 @@ const ShowcaseSection = () => {
           <div className='border-1 border-dashed border-[#343434] mt-15 rounded-xl'>
             <div className='flex flex-col items-center justify-center gap-5 py-10 px-8'>
             <p className="text-white text-2xl font-semibold ff_geologica">Your Project here</p>
-                  <p className="max-w-[494px] text-sm text-white text-center">The proof is in our work. Check out <span className='underline text-[#F3FE00]'>
+                  <p className="sm:max-w-[494px] max-w-full text-sm text-white text-center">The proof is in our work. Check out <span className='underline text-[#F3FE00]'>
                       <a href="">our case studies</a></span> to learn how our product development services can transform your business</p>
                       <Button variant="default" size="default" className="relative group">
                           <span className="flex items-center gap-3 justify-center transition-opacity group-hover:opacity-0">

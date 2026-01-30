@@ -33,14 +33,14 @@ const insightsData = [
 
 const InsightSection = () => {
   return (
-    <section className="py-20">
+    <section className="sm:py-20 py-8">
       <div className="container">
-        <div className='flex justify-between'>
+        <div className='sm:flex flex-col sm:flex-row sm:justify-between justify-center'>
           <SectionHeader
-            align='start'
+            align='sm:start'
             eyebrow="Our Insights"
             title="Insights That Inspire Vision Forward"
-            titleclassName='w-127 leading-10 pt-4'
+            titleclassName='sm:w-127 w-full leading-10 pt-4'
           />
 
           <Button className="w-41 h-12 bg-white">
@@ -54,7 +54,7 @@ const InsightSection = () => {
           </Button>
         </div>
 
-        <div className='grid grid-cols-3 gap-8 mt-12'>
+        <div className='grid sm:grid-cols-3 grid-cols-1 gap-8 mt-12'>
           {insightsData.map((item, index) => (
             <InsightCard
               key={index}

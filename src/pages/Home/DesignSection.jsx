@@ -7,12 +7,12 @@ import { Arrowup1 } from '@/assets/images'
 const DesignSection = () => {
     return (
         <section
-            className="relative bg-cover bg-center bg-no-repeat py-24"
+            className="relative bg-cover bg-center bg-no-repeat sm:py-20 py-8"
             style={{ backgroundImage: `url(${bg})` }}
         >
-            <div className="container flex items-center justify-between">
+            <div className="container sm:flex flex-col sm:flex-row items-center justify-between">
                 <div>
-                    <h2 className="text-[70px] ff_geologica max-w-4xl font-bold text-white leading-21">
+                    <h2 className="sm:text-[70px] text-[28px] ff_geologica sm:max-w-4xl max-w-full font-bold text-white sm:leading-21 leading-10">
                         Design That Thinks. Interfaces That Feel.
                     </h2>
 
@@ -20,7 +20,7 @@ const DesignSection = () => {
                         At ZeeFrames, we craft AI-ready design systems for modern software responsive, scalable, and human-centered.
                     </p>
 
-                    <Button variant="default" size="default" className="relative group mt-6">
+                    <Button variant="default" size="default" className="relative group  sm:mt-6 mt-9">
                         <span className="flex items-center gap-3 justify-center transition-opacity group-hover:opacity-0">
                             See AI in Action
                             <Arrowup1/>

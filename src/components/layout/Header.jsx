@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import logo from "@/assets/images/logo.png";
 import { Button } from "../ui/button";
-import { Arrowup1,Dropdown } from "@/assets/images";
+import { Arrowup1,Dropdown, Toggle } from "@/assets/images";
 import MegaDropdown from "@/components/MegaDropdown";
 
 const headerLinks = [
@@ -18,6 +18,7 @@ const Header = () => {
   const pathname = location.pathname;
   const [showMega, setShowMega] = useState(false);
   const [activeTab, setActiveTab] = useState('uiux');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Determine active tab based on current URL
   useEffect(() => {
@@ -40,16 +41,28 @@ const Header = () => {
 
   return (
     <header className="bg-[#0D0D0D] sticky top-0 z-70">
-      <div className="container">
-        <nav className="flex items-center justify-between py-5.5 relative">
+        <nav className="flex items-center justify-between py-5 sm:py-5.5 px-4 sm:px-20 relative">
 
           {/* LOGO */}
           <Link aria-label="logolink" to="/">
             <img src={logo} alt="Logo" className="h-9 w-45" />
           </Link>
 
+          {/* MOBILE TOGGLE */}
+          <button 
+            className="lg:hidden block text-white"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle mobile menu"
+          >
+            <Toggle />
+          </button>
+
           {/* NAV LINKS */}
-          <ul className="flex gap-8 text-white">
+          <ul className={`lg:flex gap-8 text-white ${
+            isMobileMenuOpen 
+              ? 'flex flex-col absolute top-full left-0 w-full bg-[#0D0D0D] items-center h-screen' 
+              : 'hidden'
+          }`}>
             {headerLinks.map((item, index) => {
               const isActive = pathname === item.path || (item.text === "Services" && pathname.startsWith('/services/'));
               const isServices = item.text === "Services";
@@ -85,7 +98,7 @@ const Header = () => {
                   {/* MEGA DROPDOWN */}
                   {isServices && showMega && (
                     <div
-                      className="absolute left-1/2 top-full w-screen -translate-x-1/2"
+                      className="absolute left-1/2 top-full w-screen -translate-x-1/2 lg:block hidden"
                       onMouseEnter={() => setShowMega(true)}
                       onMouseLeave={() => setShowMega(false)}
                     >
@@ -98,7 +111,7 @@ const Header = () => {
           </ul>
 
           {/* CTA BUTTON */}
-          <Button variant="default" size="default" className="relative group">
+          <Button variant="default" size="default" className="relative group lg:block hidden">
             <span className="flex items-center gap-3 transition-opacity group-hover:opacity-0">
               Work with us
               <Arrowup1 />
@@ -110,7 +123,6 @@ const Header = () => {
           </Button>
 
         </nav>
-      </div>
     </header>
   );
 };

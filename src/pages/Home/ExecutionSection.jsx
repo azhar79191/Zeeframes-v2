@@ -97,7 +97,7 @@ const ExecutionSection = ({ tag, title, image }) => {
   });
 
   return (
-    <section className="py-20">
+    <section className="sm:py-20 py-8">
         <div className="container">
           <SectionHeader
               eyebrow="Our process, Your Advantage"
@@ -105,10 +105,10 @@ const ExecutionSection = ({ tag, title, image }) => {
               description="We have become experts in creating top-notch digital products. We design beautifully and develop excellently. And we care deeply about what we do."
           />
       <div ref={containerRef}
-        className="relative mx-auto flex max-w-7xl gap-20 px-6 py-24">
-      <div className="relative w-1/2">
+        className="relative mx-auto flex max-w-7xl gap-20 sm:px-6 sm:py-24 py-8 md:flex-row flex-col">
+      <div className="relative md:w-1/2 w-full">
                     {/* Line */}
-                    <div className="absolute left-0 top-0 h-full w-[2px] bg-white/10">
+                    <div className="absolute left-0 top-0 h-full w-[2px] bg-white/10 md:block hidden">
                         <motion.div
                             style={{ height: lineHeight }}
                           className="w-full bg-[#F3FE00]"
@@ -116,7 +116,7 @@ const ExecutionSection = ({ tag, title, image }) => {
                     </div>
     
                     {/* Cards */}
-                  <div className="space-y-20 pl-16">
+                  <div className="space-y-20 md:pl-16 pl-0">
                       {processSteps.map((step, index) => {
                           const isActive = activeIndex === index;
 
@@ -128,33 +128,46 @@ const ExecutionSection = ({ tag, title, image }) => {
                               >
                                   {/* NUMBER – LEFT OF LINE */}
                                   {isActive && (
-                                      <div className="absolute -left-25 top-1 text-lg font-semibold text-white transition-opacity duration-300">
+                                      <div className="absolute -left-25 top-1 text-lg font-semibold text-white transition-opacity duration-300 md:block hidden">
                                           {String(step.id).padStart(2, "0")}
                                       </div>
                                   )}
-
-
+                                  <div className="flex gap-1.5">
+                                  {/* NUMBER FOR MOBILE */}
+                                  <div className="md:hidden block text-base font-medium text-[#FFF] mb-2">
+                                      {String(step.id).padStart(2, "0")}
+                                  </div>
                                   {/* CONTENT */}
                                   <h3
-                                      className={`text-[19px] font-semibold ff_geologica transition-colors duration-300
-            ${isActive ? "text-white" : "text-[#8F8F8F]"}`}
+                                      className={`text-[19px] font-semibold ff_geologica transition-colors duration-300 md:text-[19px] text-xl
+            ${isActive ? "text-white" : "text-[#8F8F8F]"} md:${isActive ? "text-white" : "text-[#8F8F8F]"} text-white`}
                                   >
                                       {step.title.replace(/^\d+\s/, "")}
                                   </h3>
+                                  </div>
 
                                   <p
-                                      className={`mt-1 text-lg transition-colors duration-300
-            ${isActive ? "text-white" : "text-[#8F8F8F]"}`}
+                                      className={`mt-1 text-lg transition-colors duration-300 md:text-lg text-base
+            ${isActive ? "text-white" : "text-[#8F8F8F]"} md:${isActive ? "text-white" : "text-[#8F8F8F]"} text-gray-300`}
                                   >
                                       {step.subtitle}
                                   </p>
 
                                   <p
-                                      className={`mt-3 max-w-md text-sm transition-colors duration-300
-            ${isActive ? "text-white" : "text-[#8F8F8F]"}`}
+                                      className={`mt-3 max-w-md text-sm transition-colors duration-300 md:text-sm text-sm
+            ${isActive ? "text-white" : "text-[#8F8F8F]"} md:${isActive ? "text-white" : "text-[#8F8F8F]"} text-gray-400`}
                                   >
                                       {step.description}
                                   </p>
+                                  
+                                  {/* Mobile Image */}
+                                  <div className="md:hidden block mt-8">
+                                      <img
+                                          src={step.image}
+                                          className="w-full h-[185px] border border-[rgba(60,60,60,0.72)] rounded-2xl object-cover"
+                                          alt={step.title}
+                                      />
+                                  </div>
                               </div>
                           );
                       })}
@@ -162,8 +175,8 @@ const ExecutionSection = ({ tag, title, image }) => {
 
                 </div>
     
-                {/* RIGHT STICKY IMAGE */}
-                <div className="sticky top-30 h-126 w-132">
+                {/* RIGHT STICKY IMAGE - DESKTOP ONLY */}
+                <div className="sticky top-30 h-126 w-132 md:block hidden">
                       {activeIndex !== null && (
                           <motion.img
                               key={activeIndex}

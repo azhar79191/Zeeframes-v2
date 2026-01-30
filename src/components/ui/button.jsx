@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "group bg-[#F3FE00] w-fit h-12 text-[#0B0B0B] text-base font-semibold leading-6 cursor-pointer rounded-full transition-colors duration-300 hover:bg-transparent hover:text-white border border-transparent hover:border-[#F3FE00]",
+          "group bg-[#F3FE00] w-fit text-[#0B0B0B] text-base font-semibold leading-6 cursor-pointer rounded-full transition-colors duration-300 hover:bg-transparent hover:text-white border border-transparent hover:border-[#F3FE00]",
         destructive:
           "group bg-white text-[#0B0B0B] h-12 text-base font-semibold leading-6 cursor-pointer rounded-full transition-colors duration-300]",
         outline:

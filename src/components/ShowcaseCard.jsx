@@ -13,7 +13,7 @@ const ShowcaseCard = ({
                 <img
                     src={image}
                     alt={title}
-                    className="h-170 w-150 object-cover"
+                    className="sm:h-170 h-[414px] sm:w-150 w-full object-cover"
                 />
             </div>
 
@@ -22,7 +22,7 @@ const ShowcaseCard = ({
                     {title}
                 </h3>
                 <div className="flex items-center justify-between mt-2">
-                <p className=" text-2xl text-white font-medium w-100">
+                <p className=" sm:text-2xl text-lg text-white font-medium w-100">
                     {description}
                 </p>
                     <span className="flex p-1 items-center justify-center w-5 h-5 shrink-0 rounded-full border border-[#B8B8B8] ">

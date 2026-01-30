@@ -89,16 +89,18 @@ const Footer = () => {
                   <div
                       className="
     grid
-    grid-cols-[minmax(200px,1fr)_minmax(110px,216px)_minmax(110px,216px)_minmax(110px,216px)]
-    gap-12
+    md:grid-cols-[minmax(200px,1fr)_minmax(110px,216px)_minmax(110px,216px)_minmax(110px,216px)]
+    grid-cols-2
+    md:gap-12
+    gap-8
     mt-8
   "
                   >
 
-                      <p className='text-[#D5D5D5] text-lg leading-7 font-normal w-98'>We transform ideas into user-centered digital experiences for businesses worldwide, from Fortune 500s to startups, using Figma, Webflow, and no-code solutions.</p>
+                      <p className='text-[#D5D5D5] md:text-lg text-base leading-7 font-normal md:w-98 w-full md:col-span-1 col-span-2'>We transform ideas into user-centered digital experiences for businesses worldwide, from Fortune 500s to startups, using Figma, Webflow, and no-code solutions.</p>
                       <div>
                           <p className='text-white text-base font-semibold leading-5'>Company</p>
-                          <ul className='flex flex-col gap-2 text-[#8F8F8F]  mt-5 w-54'>
+                          <ul className='flex flex-col gap-2 text-[#8F8F8F] mt-5 md:w-54 w-full'>
                               {company.map((item, index) => (
                                   <li>
                                       <Link to={item.path} className='text-sm hover:text-[#E7E7E7] leading-5'>
@@ -110,7 +112,7 @@ const Footer = () => {
                       </div>
                       <div>
                               <p className='text-white text-base font-semibold leading-5'>Services</p>
-                          <ul className='flex flex-col gap-3.5 mt-5 text-[#8F8F8F]  w-54'>
+                          <ul className='flex flex-col gap-3.5 mt-5 text-[#8F8F8F] md:w-54 w-full'>
                               {Services.map((item, index) => (
                                   <li>
                                       <Link to={item.path} className='text-sm hover:text-[#E7E7E7] leading-5'>
@@ -122,7 +124,7 @@ const Footer = () => {
                       </div>
                       <div>
                               <p className='text-white text-base font-semibold leading-5 pb-5'>Reviews</p>
-                          <ul className='flex flex-col gap-3.5 text-[#8F8F8F]  w-54'>
+                          <ul className='flex flex-col gap-3.5 text-[#8F8F8F] md:w-54 w-full'>
                               {Reviews.map((item, index) => (
                                   <li>
                                       <Link to={item.path} className='text-sm hover:text-[#E7E7E7] leading-5'>
@@ -134,7 +136,7 @@ const Footer = () => {
                       
             </div>
                   </div>
-                  <div className='p-6 bg-[#171717] grid grid-cols-4 gap-4 rounded-2xl mt-8.5 mb-8'>
+                  <div className='md:p-6 p-4 bg-[#171717] grid md:grid-cols-4 grid-cols-1 md:gap-4 gap-6 rounded-2xl mt-8.5 mb-8'>
                     <Footercard
                     svg={America}
                           title={"North America"}
@@ -161,9 +163,9 @@ const Footer = () => {
                       />
 
                   </div>
-                  <div className='flex items-center justify-between'>
-                      <p className='text-sm text-[#8F8F8F] leading-5'>© ZeeFrames (Private) Limited. All Rights Reserved.</p>
-                      <ul className='flex gap-4'>
+                  <div className='flex sm:flex-row flex-col sm:items-center items-start sm:justify-between justify-center sm:gap-6 gap-6'>
+                      <p className='md:text-sm text-xs text-[#8F8F8F] leading-5'>© ZeeFrames (Private) Limited. All Rights Reserved.</p>
+                      <ul className='flex gap-4 md:justify-end justify-start'>
                         {SocialLinks.map((item,index)=>(
                           <li key={index}>
                             <Link to={item.to} target="_blank" rel="noopener noreferrer">

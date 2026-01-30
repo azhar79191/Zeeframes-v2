@@ -36,28 +36,30 @@ const Icons = [
 
 const HeroSection = () => {
     return (
-        <section>
-
+        <section className="">
+            <div className="container">
             {/* Glow background */}
             <div className="absolute left-1/9 top-40 -translate-x-1/2 h-[320px] w-[320px] rounded-full bg-[#F3FE00]/20 blur-[120px]" />
             <div className="absolute right-1 top-40  h-[320px] w-[320px] rounded-full bg-[#F3FE00]/20 blur-[120px]" />
             <div className="absolute left-1/4 top-20 -translate-x-1/2">
                 <img src={cloud} alt="cloud" loading="lazy" />
             </div>
-            <div className="absolute left-1/8 top-120 -translate-x-1/2">
+            <div className="absolute sm:left-1/8 left-1/8 sm:top-120 top-95 -translate-x-1/2">
                 <img src={star} alt="star" loading="lazy" />
             </div>
 
-            <div className="flex my-12 items-center gap-3 relative z-30 bg-[#0B0B0B] border border-[#1F1F1F] w-fit justify-center mx-auto p-2 rounded-md">
-                <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#F3FE00]">
+            <div className="sm:flex flex-wrap sm:my-12 my-8 items-center gap-3 relative z-30 bg-[#0B0B0B] border border-[#1F1F1F] w-fit justify-center mx-auto p-2 rounded-md">
+                <div className="flex items-center gap-3">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[#F3FE00]">
                     <img src={logo} alt="logo" className="h-4" />
                 </span>
 
-                <p className="text-base leading-6 text-white whitespace-nowrap">
+                <p className="text-base leading-6 text-white ">
                     Trusted by startups to craft $100M+ designs with
                 </p>
+                </div>
 
-                <ul className="flex items-center group -translate-x-2 mr-2 ml-2">
+                <ul className="flex items-center sm:mt-0 mt-3  group -translate-x-2 mr-2 ml-2">
                     {Icons.map((item, index) => (
                         <li
                             key={index}
@@ -73,20 +75,20 @@ const HeroSection = () => {
             </div>
 
 
-            <div className="relative text-center mt-12">
-                <h1 className="text-center text-7xl w-243 uppercase ff_geologica mx-auto font-extrabold leading-24 text-[#FFF]">
+            <div className="relative text-center sm:mt-12 mt-0">
+                <h1 className="text-center sm:text-7xl text-4xl sm:w-243 w-[327px] uppercase ff_geologica mx-auto font-extrabold sm:leading-24 leading-12.5 text-[#FFF]">
                     Creative Intelligence in Every Pixel
                 </h1>
 
-                <span className="absolute right-45 ff_geologica top-4 rounded-md rotate-7 bg-[#F3FE00] px-2 py-1 text-xs font-extrabold text-black">
+                <span className="absolute right-23 ff_geologica top-4 sm:block hidden rounded-md rotate-7 bg-[#F3FE00] px-2 py-1 text-xs font-extrabold text-black">
                     NO CODE
                 </span>
             </div>
 
-            <p className="mx-auto mt-3 mb-12 ff_geologica text-xl text-gray-400 text-center">
+            <p className="mx-auto mt-3 sm:mb-12 mb-0 ff_geologica sm:text-xl text-base text-gray-400 text-center">
                 We Craft <span className="text-[#F3FE00]">Stunning</span> Designs For Businesses Worldwide.
             </p>
-            <div className="mt-8 flex justify-center gap-4">
+            <div className="sm:mt-8 mt-6 flex justify-center gap-4">
                 <Button className="relative group overflow-hidden" variant="destructive" size="destructive">
                     {/* Default state */}
                     <span className="flex items-center justify-center gap-3 transition-opacity duration-300 group-hover:opacity-0">
@@ -135,11 +137,11 @@ const HeroSection = () => {
                 </Button>
             </div>
 
-            <p className="text-white text-sm text-center mt-22 font-medium">Trusted by Industry Leaders & Fast-Growing Startups</p>
+            <p className="text-white text-sm text-center sm:mt-22 mt-8 font-medium">Trusted by Industry Leaders & Fast-Growing Startups</p>
 
 
-            <div className="mt-6 mb-21 mx-30 overflow-hidden relative">
-                <div className="flex logo-track gap-12 w-max animate-logo-scroll">
+            <div className="sm:mt-6 mt-5 sm:mb-21 mb-8 sm:mx-30 mx-0 overflow-hidden relative">
+                <div className="flex logo-track sm:gap-12 gap-10 w-max animate-logo-scroll">
                     {[...logos, ...logos].map((logo, index) => (
                         <img
                             key={index}
@@ -150,6 +152,7 @@ const HeroSection = () => {
                         />
                     ))}
                 </div>
+            </div>
             </div>
         </section>
     );

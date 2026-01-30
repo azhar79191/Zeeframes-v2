@@ -5,14 +5,14 @@ import SectionHeader from '@/components/SectionHeader';
 
 const ServicesSection = ({ tag, title, image }) => {
   return (
-    <section className="py-20">
+    <section className="sm:py-20 py-8">
     <div className="container">
       <SectionHeader
         eyebrow="WE are great at"
         title="Our Services"
         description="Designs with Exceptional User Experiences."
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 sm:mt-16 mt-8">
 
         <ServiceCard
           tag="For Digital Experiences"

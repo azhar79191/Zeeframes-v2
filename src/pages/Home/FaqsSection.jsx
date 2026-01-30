@@ -32,7 +32,7 @@ const FaqsSection = () => {
         setActiveIndex(activeIndex === index ? null : index);
     };
     return (
-        <section className="py-20">
+        <section className="py-20 sm:block hidden">
             <div className="container">
                 <div className="grid grid-cols-[minmax(100px,409px)_minmax(100px,739px)] gap-12">
                     <div>
