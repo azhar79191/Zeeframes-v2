@@ -33,7 +33,7 @@ const valuesData = [
 ]
 const ValueSection = () => {
     return (
-        <section className='py-20 bg-[#0D0D0D] relative z-50'>
+        <section className='sm:py-20 py-8 bg-[#0D0D0D] relative z-50'>
             <div className='container'>
                 <div className='flex flex-col gap-6'>
                     <p className='main-heading ff_geologica'>Our Value</p>
@@ -41,8 +41,8 @@ const ValueSection = () => {
                 </div>
                 {valuesData.map((item, index) => (
                     <div className='flex flex-col px-6 py-8' key={index}>
-                        <div className='flex justify-between gap-20 items-center'>
-                            <div className='flex items-center gap-20'>
+                        <div className='flex sm:flex-row flex-col justify-between sm:gap-20 gap-6 items-center'>
+                            <div className='flex items-center  sm:gap-20 gap-3'>
                                 <h2 className="text-lg text-[#FFF] font-inter">
                                     {String(item.id).padStart(2, "0")}
                                 </h2>
@@ -58,7 +58,7 @@ const ValueSection = () => {
 
                                     {/* Title */}
                                     <p
-                                        className="relative z-10 pl-0 font-[Geologica] text-[#FFF] text-[32px] font-extralight transform transition-transform duration-500 ease-out group-hover:translate-x-20 "
+                                        className="relative  z-10 pl-0 font-[Geologica] text-[#FFF] sm:text-[32px] text-[28px] sm:whitespace-nowrap font-extralight transform transition-transform duration-500 ease-out group-hover:translate-x-20 "
                                     >
                                         {item.title}
                                     </p>
@@ -66,7 +66,7 @@ const ValueSection = () => {
 
 
                             </div>
-                            <p className="text-[white] text-base leading-6 w-[424px] font-['Inter']">{item.description}</p>
+                            <p className="text-[white] text-base leading-6 sm:w-[424px] w-full font-['Inter']">{item.description}</p>
                         </div>
                     </div>
                 ))}

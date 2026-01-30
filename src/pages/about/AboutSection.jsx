@@ -16,9 +16,9 @@ const cardsdata=[
 ]
 const AboutSection = () => {
   return (
-      <section className='py-20 relative z-50 bg-[#0B0B0B]'>
+      <section className='sm:py-20 py-8 relative z-50 bg-[#0B0B0B]'>
         <div className='container'>
-            <div className='wrapper flex items-start gap-20'>
+            <div className='wrapper flex sm:flex-row flex-col  items-start gap-20'>
                 <img src={about} alt="about" width="390" height="391" className='h-auto object-contain max-w-full'/>
                 <div className='flex flex-col  gap-12'>
                     <div className='flex flex-col items-start gap-4'>
@@ -26,7 +26,7 @@ const AboutSection = () => {
                           <h2 className="text-white font-['Geologica'] text-[40px] leading-10 font-bold">Who We Are</h2>
                           <p className="text-[#D5D5D5] font-['Inter'] text-sm leading-[21px] max-w-142">ZeeFrames is a specialized UI UX design agency with a focus on creating exceptional digital experiences. ZeeFrames is committed to delivering the best user experience possible for your business.</p>
                     </div>
-                    <div className='grid grid-cols-3 gap-6'>
+                    <div className='grid sm:grid-cols-3 grid-cols-1 gap-6'>
                     {cardsdata.map((items,index)=>(
                         <div className='p-4 bg-[#0B0B0B] border border-[#373737] rounded-xl hover:border-[#F3FE00]'>
                             <span>{items.icon}</span>

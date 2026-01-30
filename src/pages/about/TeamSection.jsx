@@ -87,15 +87,15 @@ const teamData5 = [
 const TeamSection = () => {
   return (
       <section className='relative z-50 '>
-          <div className=' sticky  top-5 bg-[#090909] py-20'>
+          <div className=' sm:sticky  top-5 bg-[#090909] sm:py-20 sm:px-0 px-6 py-8'>
               <SectionHeader eyebrow="our team" title="Meet the people behind the magic" description="Rest assured. Your project is in good hands." align='center'/>
               </div>
               <div className='container'>
-              <div className='flex justify-between ml-77 mt-17.5 relative z-30'>
+              <div className='flex sm:flex-row flex-col justify-between sm:gap-auto gap-6 sm:ml-77 sm:mt-17.5 relative z-30'>
               {teamData.map((item, index) => (
                   <div
                       key={index}
-                      className={index === 1 ? "mt-25" : ""}
+                      className={index === 1 ? "sm:mt-25" : ""}
                   >
                       <img
                           src={item.img}
@@ -112,11 +112,11 @@ const TeamSection = () => {
                   </div>
               ))}
               </div>
-              <div className='flex justify-between  mr-102 mt-17.5 relative z-30'>
+              <div className='flex sm:flex-row flex-col justify-between sm:gap-auto gap-6 sm:mr-102 sm:mt-17.5 mt-6 relative z-30'>
                   {teamData2.map((item, index) => (
                       <div
                           key={index}
-                          className={index === 1 ? "mt-25" : ""}
+                          className={index === 1 ? "sm:mt-25" : ""}
                       >
                           <img
                               src={item.img}
@@ -133,11 +133,11 @@ const TeamSection = () => {
                       </div>
                   ))}
               </div>
-              <div className='flex justify-between  mr-26 ml-50.5 mt-17.5 relative z-30'>
+              <div className='flex sm:flex-row flex-col justify-between sm:gap-auto gap-6 sm:mr-26 sm:ml-50.5 sm:mt-17.5 mt-6 relative z-30'>
                   {teamData3.map((item, index) => (
                       <div
                           key={index}
-                          className={index === 1 ? "mt-25" : ""}
+                          className={index === 1 ? "sm:mt-25" : ""}
                       >
                           <img
                               src={item.img}
@@ -154,11 +154,11 @@ const TeamSection = () => {
                       </div>
                   ))}
               </div>
-              <div className='flex justify-between   mt-17.5 relative z-30'>
+              <div className='flex sm:flex-row flex-col justify-between sm:gap-auto gap-6 sm:mr-26 sm:ml-50.5 sm:mt-17.5 mt-6  relative z-30'>
                   {teamData4.map((item, index) => (
                       <div
                           key={index}
-                          className={index === 1 ? "mt-75" :index  === 2 ? "mt-25":""}
+                          className={index === 1 ? "sm:mt-75" :index  === 2 ? "sm:mt-25":""}
                       >
                           <img
                               src={item.img}
@@ -175,11 +175,11 @@ const TeamSection = () => {
                       </div>
                   ))}
               </div>
-              <div className='flex justify-between   mt-17.5 pb-20 relative z-30'>
+              <div className='flex sm:flex-row flex-col  sm:gap-auto gap-6 sm:mr-102 sm:ml-50.5 justify-between sm:mt-17.5 mt-6 sm:pb-20 pb-0 relative z-30'>
                   {teamData5.map((item, index) => (
                       <div
                           key={index}
-                          className={index === 0 ? "mt-50" : index === 1 ? "mt-25" : ""}
+                          className={index === 0 ? "sm:mt-50" : index === 1 ? "sm:mt-25" : ""}
                       >
                           <img
                               src={item.img}

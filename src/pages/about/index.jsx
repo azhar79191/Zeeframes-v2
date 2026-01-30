@@ -41,15 +41,15 @@ const About = () => {
         <>
             <section>
                 <div className='container'>
-                    <div className='flex relative items-center flex-col gap-3 justify-between mt-20'>
-                        <h1 className=" text-white text-7xl max-w-182 text-center font-extrabold leading-24 items-center font-['Geologica'] uppercase">A Strategic UI UX Design Agency</h1>
-                        <p className="text-white text-lg leading-[27px] max-w-194 text-center font-['Inter']">We are the best product design agency for startups. We excel in UI/UX design, branding, web development & committed to 100% satisfaction with every project.</p>
+                    <div className='flex relative items-center flex-col sm:gap-3 gap-4 justify-between sm:mt-20 mt-8'>
+                        <h1 className=" text-white sm:text-7xl text-4xl max-w-182 text-center font-extrabold sm:leading-24 leading-12.5 items-center font-['Geologica'] uppercase">A Strategic UI UX Design Agency</h1>
+                        <p className="text-white sm:text-lg text-base leading-[27px] sm:max-w-194 max-w-full text-center font-['Inter']">We are the best product design agency for startups. We excel in UI/UX design, branding, web development & committed to 100% satisfaction with every project.</p>
 
                     </div>
                     <div className='absolute top-[51%] right-[1070px] '><Star /></div>
 
 
-                    <div className="mt-8 flex justify-center mx-auto">
+                    <div className="sm:mt-8 mt-6 flex justify-center mx-auto">
                         <Button
                             variant="link"
                             size="default"
@@ -69,31 +69,31 @@ const About = () => {
                         </Button>
                     </div>
 
-                    <div className='grid grid-cols-4 mt-16 mb-25 gap-4'>
+                    <div className='grid sm:grid-cols-4 grid-cols-1 sm:mt-16 mt-8 sm:mb-25 mb-8 gap-4'>
                     {ratingData.map((item, index) => (
                         <div
                             key={index}
-                            className="px-5 py-3 rounded-xl border w-fit bg-[#171717] border-[#373737]"
+                            className="sm:px-5 px-3 py-3 flex sm:flex-col flex-row items-center sm:gap-3 gap-2 rounded-xl border sm:w-fit w-full bg-[#171717] border-[#373737]"
                         >
-                            <div className='flex items-center justify-center gap-2.5'>
-                            <h2 className="text-[#FFF] text-center text-lg font-semibold leading-[21px] font-['Inter']">
+                            <div className='flex items-center justify-center sm:gap-2.5 gap-1.5'>
+                            <h2 className="text-[#FFF] text-center whitespace-nowrap sm:text-lg text-base font-semibold leading-[21px] font-['Inter']">
                                 {item.rating}
                             </h2>
 
                             {item.flags && (
-                                <div className="flex items-center gap-1.5 p[3px]">
+                                <div className="flex items-center sm:gap-1 gap-0.5">
                                     {item.flags.map((flag, i) => (
                                         <span key={i}>{flag}</span>
                                     ))}
                                 </div>
                             )}
                             </div>
-                            <Link className="px-1.5 py-1 mt-4 rounded-full border border-[#373737] flex items-center gap-1.5" to={item.path} target='blank'>
+                            <Link className="sm:px-1.5 px-1 py-1 sm:mt-4 mt-0 rounded-full border border-[#373737] flex items-center gap-1.5" to={item.path} target='blank'>
                                 <span className="px-2 py-1 bg-white rounded-full w-fit">
                                     {item.svg}
                                 </span>
 
-                                <p className="font-['Inter'] text-sm text-[#D5D5D5] leading-4">
+                                <p className="font-['Inter'] text-sm whitespace-nowrap text-[#D5D5D5] leading-4">
                                     Reviewed on
                                 </p>
 
@@ -108,7 +108,7 @@ const About = () => {
                 </div>
 
             </section>
-            <section className='sticky top-10'>
+            <section className='sm:sticky  top-10'>
                 <img src={Team} alt="Team thumbnail" width="1441" height="677" className='w-full object-cover h-auto' defer/>
             </section>
             <AboutSection/>
