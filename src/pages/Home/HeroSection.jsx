@@ -89,7 +89,7 @@ const HeroSection = () => {
                 We Craft <span className="text-[#F3FE00]">Stunning</span> Designs For Businesses Worldwide.
             </p>
             <div className="sm:mt-8 mt-6 flex justify-center gap-4">
-                <Button className="relative group overflow-hidden" variant="destructive" size="destructive">
+                    <Button onClick={() => window.location.href = "https://calendly.com/contact-zeeframes/30min?month=2026-01"} className="relative group overflow-hidden" variant="destructive" size="destructive" target="_blank">
                     {/* Default state */}
                     <span className="flex items-center justify-center gap-3 transition-opacity duration-300 group-hover:opacity-0">
                         Schedule Call
@@ -108,7 +108,7 @@ const HeroSection = () => {
                 </Button>
 
 
-                <Button variant="default" size="default" className="relative group border py-2.5 px-4 border-gray-700 text-white bg-transparent">
+                    <Button onClick={() => window.location.href = "https://www.figma.com/proto/Wvc5EAdw0leAMdlJ3tF6Be/ZeeFrames--Website-%7C-Portfolio-%7C-New-Branding?page-id=0%3A1&node-id=1653-10&viewport=-98%2C1247%2C0.16&t=I70aaK7I2yFjTlya-1&scaling=scale-down&content-scaling=fixed"} variant="default" size="default" className="relative group border py-2.5 px-4 border-gray-700 text-white bg-transparent" target="_blank">
                     <span className="transition-opacity group-hover:opacity-0">
                         © 2025 Work
                     </span>

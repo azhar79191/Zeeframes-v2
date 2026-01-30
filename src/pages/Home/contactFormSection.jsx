@@ -73,18 +73,18 @@ const ContactFormSection = () => {
 
                     </div>
                     <div className='flex items-center gap-6'>
-                        <a href="https://techbehemoths.com/company/zeeframes" target='_blank'>
+                        <Link to="https://techbehemoths.com/company/zeeframes" target='_blank'>
                             <img src={techlogo} alt="techlogo" className='w-27 h-9' />
-                        </a>
-                        <a href="https://www.trustpilot.com/review/zeeframes.com" target='_blank'>
+                        </Link>
+                        <Link to="https://www.trustpilot.com/review/zeeframes.com" target='_blank'>
                             <img src={trustpilot} alt="trustpilot" className='w-39 h-9' />
-                        </a>
-                        <a href="https://selectedfirms.co/agency/zeeframes" target='_blank'>
+                        </Link>
+                        <Link to="https://selectedfirms.co/agency/zeeframes" target='_blank'>
                             <img src={uilogo} alt="uilogo" className='w-13 h-9' />
-                        </a>
-                        <a href="https://techbehemoths.com/awards-2024/ux-ui-design/pakistan#view=64495" target='_blank'>
+                        </Link>
+                        <Link to="https://techbehemoths.com/awards-2024/ux-ui-design/pakistan#view=64495" target='_blank'>
                             <img src={awardbanner} alt="awardbanner" className='w-12 h-9' />
-                        </a>
+                        </Link>
                     </div>
                 </div>
                     <form action="submit" className='p-6 rounded-3xl border bg-[rgba(255,255,255,0.05)] border-[#373737]'>

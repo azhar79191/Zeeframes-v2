@@ -21,7 +21,7 @@ const ShowcaseSection = () => {
             <p className="text-white text-2xl font-semibold ff_geologica">Your Project here</p>
                   <p className="sm:max-w-[494px] max-w-full text-sm text-white text-center">The proof is in our work. Check out <span className='underline text-[#F3FE00]'>
                       <a href="">our case studies</a></span> to learn how our product development services can transform your business</p>
-                      <Button variant="default" size="default" className="relative group">
+            <Button onClick={() => window.location.href = "https://calendly.com/contact-zeeframes/30min?month=2026-01"} variant="default" size="default" className="relative group">
                           <span className="flex items-center gap-3 justify-center transition-opacity group-hover:opacity-0">
                          Book a dicovery call
                           <Arrowup1/>

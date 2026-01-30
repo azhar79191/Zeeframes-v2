@@ -43,7 +43,7 @@ const InsightSection = () => {
             titleclassName='sm:w-127 w-full leading-10 pt-4'
           />
 
-          <Button className="w-41 h-12 bg-white">
+          <Button onClick={() => window.location.href = "/insights"} className="w-41 h-12 bg-white">
             <span className="group-hover:hidden flex items-center gap-3 justify-center">
               Explore More
               <Arrowup1 />

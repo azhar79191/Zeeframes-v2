@@ -103,7 +103,7 @@ const Services = [
         path: "/services/ui-ux-webDesign",
         icon: <Web />,
     },
-    {   
+    {
         id: 8,
         category: "uiux",
         text: "Mobile Design",
@@ -205,10 +205,10 @@ const MegaDropdown = ({ activeTab: propActiveTab }) => {
     return (
         <div className="pt-10 pb-25 bg-[#090909]">
             <div className="container">
-                <div className="flex gap-6">
+                <div className="flex flex-col lg:flex-row gap-6">
 
                     {/* ASIDE TABS */}
-                    <aside className="sticky top-0">
+                    <aside className="w-full lg:w-auto lg:sticky lg:top-0">
                         {TabsData.map(tab => {
                             const isActive = activeTab === tab.key
 
@@ -216,8 +216,8 @@ const MegaDropdown = ({ activeTab: propActiveTab }) => {
                                 <Link
                                     key={tab.id}
                                     to={tab.path}
-                                    className={`p-4 w-[279px] rounded-lg block transition hover:bg-[rgba(243,254,0,0.08)]
-                  ${isActive ? "bg-[rgba(243,254,0,0.08)]" : ""}`}
+                                    className={`p-4 w-full lg:w-[279px] rounded-lg block transition hover:bg-[rgba(243,254,0,0.08)]
+                                    ${isActive ? "bg-[rgba(243,254,0,0.08)]" : ""}`}
                                 >
                                     <div className="flex items-center gap-3">
                                         <span>{tab.icon}</span>
@@ -231,13 +231,13 @@ const MegaDropdown = ({ activeTab: propActiveTab }) => {
                     </aside>
 
                     {/* SERVICES GRID */}
-                    <div className="grid grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
                         {filteredServices.map(service => (
                             <Link
                                 key={service.id}
                                 to={service.path}
-                                className="p-5 bg-[#090909] rounded-sm w-[456px]
-                hover:bg-[rgba(243,254,0,0.08)] hover:-translate-y-2 transition duration-300"
+                                className="p-5 bg-[#090909] rounded-sm w-full lg:w-[456px]
+                                hover:bg-[rgba(243,254,0,0.08)] hover:-translate-y-2 transition duration-300"
                             >
                                 <div className="flex gap-3">
                                     <span>{service.icon}</span>

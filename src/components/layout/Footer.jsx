@@ -34,41 +34,41 @@ const company =[
 const Services = [
     {
         text: "UX UI Design",
-        path: "/uxuidesign"
+        path: "/services/ui-ux-consulting"
     },
     {
         text: "UX Research",
-        path: "/uxresearch"
+        path: "/services/ui-ux-insights"
     },
     {
         text: "Design System",
-        path: "/designsystem"
+        path: "/services/ui-ux-guideline"
     },
     {
         text: "Web App Design",
-        path: "/webappdesign"
+        path: "/services/ui-ux-webDesign"
     },
     {
         text: "Mobile App Design",
-        path: "/mobileappdesign"
+        path: "/services/ui-ux-mobileDesign"
     }
 ]
 const Reviews = [
     {
         text: "Clutch (4.8)",
-        path: "/clutch"
+        path: "https://clutch.co/profile/zeeframes"
     },
     {
         text: "Good Firms (4.9)",
-        path: "/goodfirms"
+        path: "#"
     },
     {
         text: "Webflow (4.7)",
-        path: "/webflow"
+        path: "#"
     },
     {
         text: "Dribbble (4.8)",
-        path: "/dribbble"
+        path: "https://dribbble.com/zeeframes"
     }
 ]
 const SocialLinks = [

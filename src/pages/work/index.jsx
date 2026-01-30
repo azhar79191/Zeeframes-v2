@@ -20,6 +20,7 @@ const Workpage = () => {
 
                     <div className="sm:mt-8 mt-6 flex justify-center mx-auto">
                         <Button
+                            onClick={() => window.location.href = "https://calendly.com/contact-zeeframes/30min?month=2026-01"}
                             variant="link"
                             size="default"
                             className="relative group border py-2.5 px-4 border-gray-700 text-white hover:text-[#F3FE00] bg-transparent overflow-hidden"

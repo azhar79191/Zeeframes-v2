@@ -76,6 +76,7 @@ const Header = () => {
                 >
                   <Link
                     to={item.path}
+                    onClick={() => setIsMobileMenuOpen(false)}
                     className={`text-lg leading-[27px] transition-colors
                     ${isActive ? 'text-[#F3FE00]' : 'text-[#FFF]'}`}
                   >
@@ -111,7 +112,7 @@ const Header = () => {
           </ul>
 
           {/* CTA BUTTON */}
-          <Button variant="default" size="default" className="relative group lg:block hidden">
+        <Button onClick={() => window.location.href = "/work"} variant="default" size="default" className="relative group lg:block hidden">
             <span className="flex items-center gap-3 transition-opacity group-hover:opacity-0">
               Work with us
               <Arrowup1 />

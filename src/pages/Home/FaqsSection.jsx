@@ -44,7 +44,7 @@ const FaqsSection = () => {
                             description="We begin with meaningful conversations that drive design decisions."
                         />
                         <div className='flex items-center gap-8 pt-8'>
-                            <Button className="w-47 h-12 bg-white">
+                            <Button onClick={() => window.location.href = "https://calendly.com/contact-zeeframes/30min?month=2026-01"} className="w-47 h-12 bg-white">
                                 <span className="group-hover:hidden flex items-center gap-3 justify-center">
                                     Book a free call
                                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">

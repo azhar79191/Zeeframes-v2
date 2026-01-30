@@ -1,9 +1,11 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ShowcaseCard = ({
     image,
     title,
+    path,
     description,
     className,
 }) => {
@@ -25,9 +27,9 @@ const ShowcaseCard = ({
                 <p className=" sm:text-2xl text-lg text-white font-medium w-100">
                     {description}
                 </p>
-                    <span className="flex p-1 items-center justify-center w-5 h-5 shrink-0 rounded-full border border-[#B8B8B8] ">
+                    <Link to={path} className="flex p-1 items-center justify-center w-5 h-5 shrink-0 rounded-full border border-[#B8B8B8] ">
                         <ArrowUpRight className="text-white" />
-                    </span>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -14,6 +14,7 @@ const ShowCaseCards = () => {
           <ShowcaseCard
               image={img1}
               title="Bloom Money"
+              path="#"
               description="Empowering communities with financial solutions."
           />
 
@@ -21,11 +22,13 @@ const ShowCaseCards = () => {
               className="sm:mt-30"
               image={img2}
               title="Alfan"
+              path="#"
               description="The Platform for Content Creators"
           />
           <ShowcaseCard
               image={img3}
               title="Earpoin"
+              path="#"
               description="The Best Place ToFind Productivity Tools"
           />
 
@@ -33,16 +36,19 @@ const ShowCaseCards = () => {
               className="sm:mt-30"
               image={img4}
               title="Finnecta"
+              path="#"
               description="Wallet application to streamline digital transactions"
           />
           <ShowcaseCard
               image={img5}
               title="Trivo"
+              path="#"
               description="Clearbit, a business intelligence platform"
           />
           <ShowcaseCard
               className="sm:mt-30"
               image={img6}
+              path="#"
               title="Fastgo"
               description="Fastgo’s scooter rental app to drive adoption"
           />
