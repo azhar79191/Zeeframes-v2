@@ -28,8 +28,8 @@ const IndustriesSection = () => {
   );
 
   return (
-    <section className="py-20 bg-[#090909]">
-      <div className="container mx-auto">
+    <section className="sm:py-20 py-8 bg-[#090909]">
+      <div className="container">
         <h2 className="text-[#F2F2F2] text-sm font-medium font-['Inter'] mb-6">
           Choose your industry
         </h2>

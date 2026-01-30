@@ -7,18 +7,18 @@ import ContactFormSection from '../Home/contactFormSection'
 const Workpage = () => {
     return (
         <>
-            <section className='py-20'>
+            <section className='sm:py-20 py-8'>
                 <div className='container'>
                     <div className='flex relative items-center flex-col gap-3 justify-between'>
-                        <h1 className=" text-white text-7xl max-w-230 text-center font-extrabold leading-24 items-center font-['Geologica'] uppercase">Our UI UX & Branding Case Studies</h1>
+                        <h1 className=" text-white sm:text-7xl text-3xl sm:max-w-230  text-center font-extrabold sm:leading-24 leading-12.5 items-center font-['Geologica'] uppercase">Our UI UX & Branding Case Studies</h1>
                         <p className="text-white text-lg leading-[27px] max-w-135 text-center font-['Inter']">No matter the industry you’re in, or the asset you need, we can design
                             it for you</p>
 
                     </div>
-                    <div className='absolute top-[51%] right-[1070px] '><Star /></div>
+                    <div className='absolute sm:top-[51%] top-[30%] sm:right-[1070px] right-[320px] '><Star /></div>
 
 
-                    <div className="mt-8 flex justify-center mx-auto">
+                    <div className="sm:mt-8 mt-6 flex justify-center mx-auto">
                         <Button
                             variant="link"
                             size="default"
