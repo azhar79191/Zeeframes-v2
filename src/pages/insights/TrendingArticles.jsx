@@ -70,11 +70,11 @@ const TrendingArticles = () => {
     })
 
     return (
-        <section className='pt-37 pb-25 bg-[url("/src/assets/images/trending-section-bg.webp")]'>
+        <section className='sm:pt-37 pt-8 sm:pb-25 pb-8 sm:bg-[url("/src/assets/images/trending-section-bg.webp")] bg-[#0D0D0D]'>
             <div className='container'>
                 <div className="relative grid grid-cols-1 sm:grid-cols-[510px_1fr] gap-[45px]">
                     {/* LEFT SIDE */}
-                    <div className='sticky top-[100px] self-start'>
+                    <div className='sm:sticky top-[100px] self-start'>
                         <SectionHeader
                             eyebrow="Popular insights"
                             title="Trending Articles You Need To Read"
@@ -82,7 +82,7 @@ const TrendingArticles = () => {
                             align='start'
                         />
 
-                        <div className='flex flex-col gap-3 mt-12'>
+                        <div className='flex flex-col gap-3 sm:mt-12 mt-4'>
                             <label className='text-[#FFF] text-sm font-medium leading-5'>
                                 Blog categories
                             </label>
@@ -115,7 +115,7 @@ const TrendingArticles = () => {
                     </div>
 
                     {/* RIGHT SIDE */}
-                    <div className="flex flex-col gap-15">
+                    <div className="flex flex-col sm:gap-15 gap-8">
                         {filteredArticles.length > 0 ? (
                             filteredArticles.map((item, index) => (
                                 <Link aria-label="Insight link" className="group  block border overflow-hidden hover:border-[#F3FE00] rounded-2xl border-transparent " to="#">

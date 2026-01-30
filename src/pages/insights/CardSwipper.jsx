@@ -69,12 +69,12 @@ const CardSwipper = () => {
     const nextRef = useRef(null);
 
     return (
-        <section className="py-20 bg-[#090909]">
+        <section className="sm:py-20 py-8 bg-[#090909]">
             <div className="container">
                 <p className="font-['Geologica'] text-[#F3FE00] text-sm uppercase">Latest insights</p>
                 {/* Custom Buttons (OUTSIDE cards) */}
-                <div className="flex items-center justify-between mb-12 mt-3">
-                    <h2 className="font-['Geologica'] text-white text-[40px] font-bold leading-11">Our Recent Articles</h2>
+                <div className="flex sm:flex-row flex-col sm:items-center sm:justify-between gap-4 sm:gap-auto sm:mb-12 mb-8 sm:mt-3 mt-4">
+                    <h2 className="font-['Geologica'] text-white sm:text-[40px] text-[28px] font-bold sm:leading-11 leading-10">Our Recent Articles</h2>
                     <div className="flex gap-3">
                         {/* PREV */}
                         <button

@@ -46,7 +46,7 @@ const About = () => {
                         <p className="text-white sm:text-lg text-base leading-[27px] sm:max-w-194 max-w-full text-center font-['Inter']">We are the best product design agency for startups. We excel in UI/UX design, branding, web development & committed to 100% satisfaction with every project.</p>
 
                     </div>
-                    <div className='absolute top-[51%] right-[1070px] '><Star /></div>
+                    <div className='absolute sm:top-[51%] top-[30%] sm:right-[1070px] right-[320px] '><Star /></div>
 
 
                     <div className="sm:mt-8 mt-6 flex justify-center mx-auto">
