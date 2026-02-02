@@ -41,7 +41,7 @@ const Header = () => {
 
   return (
     <header className="bg-[#0D0D0D] sticky top-0 z-70">
-        <nav className="flex items-center justify-between py-5 sm:py-5.5 px-4 sm:px-20 relative">
+        <nav className="flex items-center justify-between  py-5 sm:py-5.5 px-4 sm:px-20 relative">
 
           {/* LOGO */}
           <Link aria-label="logolink" to="/">
@@ -60,10 +60,11 @@ const Header = () => {
           {/* NAV LINKS */}
          <ul
   className={`
-    lg:flex gap-4 text-white
+    lg:flex gap-8 text-white
     fixed lg:static
     top-15 right-0
     px-6 py-12
+    sm:px-0 sm:py-0
     h-screen w-full
     bg-[#0D0D0D]
     flex flex-col items-center lg:justify-center
@@ -88,7 +89,7 @@ const Header = () => {
                   <Link
                     to={item.path}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className={`text-lg leading-[27px] transition-colors
+                    className={`text-lg leading-[27px]  transition-colors
                     ${isActive ? 'text-[#F3FE00]' : 'text-[#FFF]'}`}
                   >
                     <span className="flex items-center gap-2">
