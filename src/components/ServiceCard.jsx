@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ServiceCard = ({ tag, title, image,link }) => {
   return (
-    <div className="group  relative sm:w-[579px] w-[327px] overflow-hidden border-y border-white/10 bg-gradient-to-b from-black to-[#0a0a0a] transition-all duration-700 hover:border-l-2 hover:border-white/10 hover:px-8">
+    <div className="group  relative sm:w-[579px] w-full overflow-hidden border-y border-white/10 bg-gradient-to-b from-black to-[#0a0a0a] transition-all duration-700 hover:border-l-2 hover:border-white/10 hover:px-8">
 
       {/* Sliding Image */}
       {image && (

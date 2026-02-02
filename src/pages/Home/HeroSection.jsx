@@ -42,7 +42,7 @@ const HeroSection = () => {
             <div className="absolute left-1/9 top-40 -translate-x-1/2 h-[320px] w-[320px] rounded-full bg-[#F3FE00]/20 blur-[120px]" />
             <div className="absolute right-1 top-40  h-[320px] w-[320px] rounded-full bg-[#F3FE00]/20 blur-[120px]" />
             <div className="absolute left-1/4 top-20 -translate-x-1/2">
-                <img src={cloud} alt="cloud" loading="lazy" />
+                <img src={cloud} alt="cloud" loading="lazy" width="435" height="429" />
             </div>
             <div className="absolute sm:left-1/8 left-1/8 sm:top-120 top-95 -translate-x-1/2">
                 <img src={star} alt="star" loading="lazy" />

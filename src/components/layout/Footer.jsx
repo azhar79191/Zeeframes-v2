@@ -169,7 +169,7 @@ const Footer = () => {
                         {SocialLinks.map((item,index)=>(
                           <li key={index}>
                             <Link to={item.to} target="_blank" rel="noopener noreferrer">
-                              <img src={item.img} alt={item.name} className='w-10 h-10' />
+                              <img src={item.img} alt="Social-link" className='w-10 h-10' />
                             </Link>
                           </li>
                         ))}
