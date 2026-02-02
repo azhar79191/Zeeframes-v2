@@ -1,6 +1,6 @@
 import React from 'react'
 import ServiceCard from '@/components/ServiceCard';
-import uxImg from "@/assets/images/square.png";
+import uxImg from "@/assets/images/square.webp";
 import SectionHeader from '@/components/SectionHeader';
 
 const ServicesSection = ({ tag, title, image }) => {

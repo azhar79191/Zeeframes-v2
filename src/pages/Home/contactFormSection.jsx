@@ -1,11 +1,11 @@
 import React from 'react'
 import SectionHeader from '@/components/SectionHeader'
 import Input from '@/components/input';
-import ali from "@/assets/images/ali.png";
-import babar from "@/assets/images/babar.png";
-import techlogo from "@/assets/images/techlogo.png";
+import ali from "@/assets/images/ali.webp";
+import babar from "@/assets/images/babar.webp";
+import techlogo from "@/assets/images/techlogo.webp";
 import trustpilot from "@/assets/images/trustpilot.svg";
-import uilogo from "@/assets/images/ui-ux.png";
+import uilogo from "@/assets/images/ui-ux.webp";
 import awardbanner from "@/assets/images/awardbanner.svg";
 import Textarea from '@/components/Textarea';
 import { Button } from '@/components/ui/button';

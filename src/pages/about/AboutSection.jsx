@@ -1,5 +1,5 @@
 import React from 'react'
-import about from "@/assets/images/about.png"
+import about from "@/assets/images/about.webp"
 import { Client, Team, Testmonials } from '@/assets/images'
 const cardsdata=[
     {heading:"Our Team", description:"Our team of expert UI UX designers has a proven track record of creating innovative design solutions that transform businesses across various industries and geographies.", icon:<Team />},

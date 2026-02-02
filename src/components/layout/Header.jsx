@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import logo from "@/assets/images/logo.png";
+import logo from "@/assets/images/logo.webp";
 import { Button } from "../ui/button";
 import { Arrowup1,Dropdown, Toggle } from "@/assets/images";
 import MegaDropdown from "@/components/MegaDropdown";

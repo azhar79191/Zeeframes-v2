@@ -3,9 +3,9 @@ import { useParams, Navigate } from 'react-router-dom';
 import { servicesData } from '@/data/servicesData';
 import { Frame, Framebalck, Star } from '@/assets/images';
 import { Button } from '@/components/ui/button';
-import impact from "@/assets/images/impact.png"
+import impact from "@/assets/images/impact.webp"
 import ContactFormSection from '../Home/contactFormSection';
-import services from "@/assets/images/services.png"
+import services from "@/assets/images/services.webp"
 import comapnyrating from "@/assets/images/company-rating.webp"
 export default function ServicePage() {
   const { slug } = useParams();

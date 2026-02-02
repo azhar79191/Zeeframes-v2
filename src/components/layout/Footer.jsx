@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Footercard from '@/components/Footercard'
 import { America, East, Europe, Pakistan } from '@/assets/images/index.jsx'
-import Be from "@/assets/images/zaptab.png"
-import Internet from "@/assets/images/zaptait.png"
-import Linkden from "@/assets/images/zaptald.png"
-import Instagram from "@/assets/images/zaptai.png"
-import Facebook from "@/assets/images/zaptaf.png"
-import X from "@/assets/images/zaptax.png"
+import Be from "@/assets/images/zaptab.webp"
+import Internet from "@/assets/images/zaptait.webp"
+import Linkden from "@/assets/images/zaptald.webp"
+import Instagram from "@/assets/images/zaptai.webp"
+import Facebook from "@/assets/images/zaptaf.webp"
+import X from "@/assets/images/zaptax.webp"
 import footerimg from "@/assets/images/footer-large-logo.webp"
 const company =[
     {

@@ -2,7 +2,7 @@ import { ArrowUp, Clutch, Derrible, Star, Verified, Webflow } from '@/assets/ima
 import React from 'react'
 import {America,Europe} from "@/assets/images/index"
 import { Button } from '@/components/ui/button'
-import Team from "@/assets/images/team.png"
+import Team from "@/assets/images/team.webp"
 import AboutSection from './AboutSection'
 import MissionSection from './MissionSection'
 import SliderSection from './SliderSection'

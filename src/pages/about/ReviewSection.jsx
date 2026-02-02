@@ -1,6 +1,6 @@
 import React from 'react'
 import { Clutchs, Firms, ReviewStars, Stars,Upwork } from '@/assets/images'
-import reviewstars from "@/assets/images/reviewstar.png"
+import reviewstars from "@/assets/images/reviewstar.webp"
 
 
 const cardsData=[

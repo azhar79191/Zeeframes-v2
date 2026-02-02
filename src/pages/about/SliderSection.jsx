@@ -1,10 +1,10 @@
 import SectionHeader from '@/components/SectionHeader'
 import React from 'react'
-import swipper1 from"@/assets/images/swippper1.png"
-import swipper2 from "@/assets/images/swipper2.png"
-import swipper3 from "@/assets/images/swipper3.png"
-import swipper4 from "@/assets/images/swipper4.png"
-import swipper5 from "@/assets/images/swipper5.png"
+import swipper1 from"@/assets/images/swippper1.webp"
+import swipper2 from "@/assets/images/swipper2.webp"
+import swipper3 from "@/assets/images/swipper3.webp"
+import swipper4 from "@/assets/images/swipper4.webp"
+import swipper5 from "@/assets/images/swipper5.webp"
 const logos = [swipper1, swipper2, swipper3, swipper4, swipper5,swipper1, swipper2,swipper3,swipper4,swipper5];
 
 const SliderSection = () => {
