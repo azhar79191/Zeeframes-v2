@@ -7,10 +7,12 @@ import InsightsPage from "@/pages/insights";
 import ServicePage from "@/pages/services";
 
 import ServicesPage from "../pages/ServicesPage";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function CustomRoutes() {
     return (
         <BrowserRouter>
+        <ScrollToTop/>
             <Routes>
                 <Route path="/" element={<MainLayout />}>
                     <Route index element={<HomeView />} />

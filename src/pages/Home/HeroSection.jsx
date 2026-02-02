@@ -48,7 +48,7 @@ const HeroSection = () => {
                 <img src={star} alt="star" loading="lazy" />
             </div>
 
-            <div className="sm:flex flex-wrap sm:my-12 my-8 items-center gap-3 relative z-30 bg-[#0B0B0B] border border-[#1F1F1F] w-fit justify-center mx-auto p-2 rounded-md">
+            <div className="sm:flex flex-wrap sm:my-12 my-8 items-center gap-3 relative z-30  border border-[#1F1F1F] w-fit justify-center mx-auto p-2 rounded-md">
                 <div className="flex items-center gap-3">
                 <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[#F3FE00]">
                     <img src={logo} alt="logo" className="h-4" />
