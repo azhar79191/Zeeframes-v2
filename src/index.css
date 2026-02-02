@@ -248,8 +248,8 @@ font-family:"Inter", system-ui, sans-serif;
 /* Fixed wrapper bottom-right */
 .whatsapp-wrapper {
   position: fixed;
-  right: 24px;
-  bottom: 24px;
+  right: 40px;
+  bottom: 28px;
   z-index: 9999;
 }
 

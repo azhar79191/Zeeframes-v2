@@ -94,7 +94,7 @@ export default function ServicePage() {
                 return (
                   <div
                     key={index}
-                    className="group flex flex-col gap-8 p-6 rounded-2xl bg-[#121212]
+                    className="group flex flex-col gap-8 p-6 rounded-2xl 
                  hover:bg-[#F3FE00] hover:shadow-[0_16px_23px_0_rgba(243,253,0,0.06)]"
                   >
                     <div className="flex items-center justify-between">
@@ -102,9 +102,9 @@ export default function ServicePage() {
                         <Icon className="text-white group-hover:text-black transition-colors duration-300" />
                       </span>
 
-                      <span>
+                      <div>
                         <Numbers />
-                      </span>
+                      </div>
                     </div>
 
                     <div className="flex flex-col gap-4">

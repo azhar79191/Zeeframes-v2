@@ -3,10 +3,11 @@ import SectionHeader from '@/components/SectionHeader';
 import { Button } from "@/components/ui/button";
 import ShowCaseCards from './ShowCaseCards';
 import { Arrowup1 } from '@/assets/images';
+import { Link } from 'react-router-dom';
 
 const ShowcaseSection = () => {
   return (
-      <section className="am:py-20 py-8">
+      <section className="sm:py-20 py-8">
         <div className="container">
           <SectionHeader
               eyebrow="how we helped others succeed"
@@ -20,7 +21,7 @@ const ShowcaseSection = () => {
             <div className='flex flex-col items-center justify-center gap-5 py-10 px-8'>
             <p className="text-white text-2xl font-semibold ff_geologica">Your Project here</p>
                   <p className="sm:max-w-[494px] max-w-full text-sm text-white text-center">The proof is in our work. Check out <span className='underline text-[#F3FE00]'>
-                      <a href="">our case studies</a></span> to learn how our product development services can transform your business</p>
+                      <Link to="/work">our case studies</Link></span> to learn how our product development services can transform your business</p>
             <Button href="https://calendly.com/contact-zeeframes/30min?month=2026-01" target="_blank" variant="default" size="default" className="relative group">
                           <span className="flex items-center gap-3 justify-center transition-opacity group-hover:opacity-0">
                          Book a dicovery call

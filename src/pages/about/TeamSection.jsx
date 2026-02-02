@@ -158,7 +158,7 @@ const TeamSection = () => {
                   {teamData4.map((item, index) => (
                       <div
                           key={index}
-                          className={index === 1 ? "sm:mt-75" :index  === 2 ? "sm:mt-25":""}
+                          className={index === 1 ? "sm:mt-75 sm:mr-25" :index  === 2 ? "sm:mt-25":""}
                       >
                           <img
                               src={item.img}

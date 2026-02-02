@@ -36,7 +36,7 @@ const FaqsSection = () => {
     return (
         <section className="py-20 sm:block hidden">
             <div className="container">
-                <div className="grid grid-cols-[minmax(100px,409px)_minmax(100px,739px)] gap-12">
+                <div className="grid grid-cols-[minmax(100px,397px)_minmax(100px,1fr)] gap-12">
                     <div>
                         <SectionHeader
                             align='start'
