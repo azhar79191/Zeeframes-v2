@@ -95,7 +95,7 @@ const ContactFormSection = () => {
                         <Input placeholder="Contact" />
                         <Textarea Name="projects" Id="Project" placeholder="Tell us about your project*" />
                             <Button
-                                className="w-full h-12 text-[#FFF] bg-[#242323] border border-[#F3FE00] hover:bg-[linear-gradient(90deg,#F3FE00_0%,#33DE1D_100%)]"
+                                className="w-full h-12 text-[#FFF] border border-[#F3FE00] bg-[linear-gradient(90deg,#F3FE00_0%,#33DE1D_100%)]"
                             >
 
                             Submit Inquiry
