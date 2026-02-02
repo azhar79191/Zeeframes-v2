@@ -24,8 +24,8 @@ const buttonVariants = cva(
           "group bg-[#F3FE00] w-fit h-12 text-[#0B0B0B] border-2 border-[#FFF] text-base font-semibold leading-6 cursor-pointer rounded-full transition-colors duration-300 hover:bg-transparent hover:text-white hover:border-[#F3FE00]",
       },
       size: {
-        default: "px-5 py-3.5",
-        destructive: "px-8 py-3.5",
+        default: "px-5 py-3",
+        destructive: "px-8 py-3",
         link: "px-6 py-4 w-fit",
         sm: "h-8 rounded-md px-3",
         lg: "h-10 rounded-md px-6",

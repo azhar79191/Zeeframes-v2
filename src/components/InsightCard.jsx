@@ -9,7 +9,7 @@ const InsightCard = ({
     datetime,
 }) => {
     return (
-        <Link aria-label="Insight link" className="group  block border overflow-hidden hover:border-[#F3FE00] rounded-2xl border-transparent " to="#">
+        <Link aria-label="Insight link" className="group  block border overflow-hidden rounded-2xl border-transparent " to="#">
             <div className="flex flex-col items-center max-w-[381] group backdrop-blur border border-white/20 hover:border-[#F3FE00] rounded-2xl bg-white/8">
                 <div className="overflow-hidden rounded-[16px_16px_0_0] w-full">
                     {/* Image */}

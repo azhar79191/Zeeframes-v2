@@ -92,7 +92,7 @@ const TrendingArticles = () => {
                                 placeholder="Search Any Insight"
                                 value={search}
                                 onChange={(e) => setSearch(e.target.value)}
-                                className="bg-[rgba(255,255,255,0.10)] border w-91 ps-6 pe-1.5 h-12 border-[rgba(255,255,255,0.20)] rounded-full text-[#FFF] text-sm"
+                                className="bg-[rgba(255,255,255,0.10)] border w-91 ps-6 pe-1.5 h-12 border-[rgba(255,255,255,0.20)] rounded-full text-[#FFF] outline-none text-sm"
                             />
 
                             {/* TABS */}

@@ -55,19 +55,23 @@ const Services = [
 ]
 const Reviews = [
     {
-        text: "Clutch (4.8)",
+        text: "Clutch",
+        count: "(4.8)",
         path: "https://clutch.co/profile/zeeframes"
     },
     {
-        text: "Good Firms (4.9)",
+        text: "Good Firms",
+        count: "(4.9)",
         path: "#"
     },
     {
-        text: "Webflow (4.7)",
+        text: "Webflow",
+        count:"(4.7)",
         path: "#"
     },
     {
-        text: "Dribbble (4.8)",
+        text: "Dribbble",
+        count:"(4.8)",
         path: "https://dribbble.com/zeeframes"
     }
 ]
@@ -128,7 +132,7 @@ const Footer = () => {
                               {Reviews.map((item, index) => (
                                   <li>
                                       <Link to={item.path} className='text-sm hover:text-[#E7E7E7] leading-5'>
-                                          {item.text}
+                                          {item.text}<span className='text-[#E7E7E7]'>{item.count}</span>
                                       </Link>
                                   </li>
                               ))}
