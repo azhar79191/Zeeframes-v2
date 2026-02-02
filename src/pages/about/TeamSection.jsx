@@ -91,7 +91,7 @@ const TeamSection = () => {
               <SectionHeader eyebrow="our team" title="Meet the people behind the magic" description="Rest assured. Your project is in good hands." align='center'/>
               </div>
               <div className='container'>
-              <div className='flex sm:flex-row flex-col justify-between sm:gap-auto gap-6 sm:ml-77 sm:mt-17.5 relative z-30'>
+              <div className='flex sm:flex-row flex-col justify-between sm:gap-auto gap-6 sm:ml-[310px] sm:mt-17.5 relative z-30'>
               {teamData.map((item, index) => (
                   <div
                       key={index}
@@ -133,7 +133,7 @@ const TeamSection = () => {
                       </div>
                   ))}
               </div>
-              <div className='flex sm:flex-row flex-col justify-between sm:gap-auto gap-6 sm:mr-26 sm:ml-50.5 sm:mt-17.5 mt-6 relative z-30'>
+              <div className='flex sm:flex-row flex-col justify-between sm:gap-auto gap-6 sm:mr-[196px] sm:ml-[105px] sm:mt-17.5 mt-6 relative z-30'>
                   {teamData3.map((item, index) => (
                       <div
                           key={index}
@@ -154,7 +154,7 @@ const TeamSection = () => {
                       </div>
                   ))}
               </div>
-              <div className='flex sm:flex-row flex-col justify-between sm:gap-auto gap-6 sm:mr-26 sm:ml-50.5 sm:mt-17.5 mt-6  relative z-30'>
+              <div className='flex sm:flex-row flex-col justify-between sm:gap-auto gap-6 sm:mt-17.5 mt-6  relative z-30'>
                   {teamData4.map((item, index) => (
                       <div
                           key={index}
@@ -175,7 +175,7 @@ const TeamSection = () => {
                       </div>
                   ))}
               </div>
-              <div className='flex sm:flex-row flex-col  sm:gap-auto gap-6 sm:mr-102 sm:ml-50.5 justify-between sm:mt-17.5 mt-6 sm:pb-20 pb-0 relative z-30'>
+              <div className="flex sm:flex-row flex-col sm:gap-0 gap-6 sm:justify-between sm:mt-[17.5px] mt-6 sm:pb-20 pb-0 relative z-30">
                   {teamData5.map((item, index) => (
                       <div
                           key={index}
@@ -184,18 +184,23 @@ const TeamSection = () => {
                           <img
                               src={item.img}
                               alt="thumbnail"
-                              width="310"
-                              height="360"
-                              className="w-full grayscale-100 hover:grayscale-0 h-auto overflow-hidden rounded-xl"
+                              width={310}
+                              height={360}
+                              className="w-full grayscale hover:grayscale-0 h-auto overflow-hidden rounded-xl"
                           />
 
                           <div className="flex justify-between mt-4 text-white">
-                              <span className="text-[#FFF] text-base leading-5 font-['Inter'] ">{item.name}</span>
-                              <p className="text-[#EFEFEF] text-base leading-5 font-['Inter'] ">{item.role}</p>
+                              <span className="text-[#FFF] text-base leading-5 font-['Inter']">
+                                  {item.name}
+                              </span>
+                              <p className="text-[#EFEFEF] text-base leading-5 font-['Inter']">
+                                  {item.role}
+                              </p>
                           </div>
                       </div>
                   ))}
               </div>
+
               </div>
     </section>
   )

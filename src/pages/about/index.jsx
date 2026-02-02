@@ -51,6 +51,8 @@ const About = () => {
 
                     <div className="sm:mt-8 mt-6 flex justify-center mx-auto">
                         <Button
+                        href="https://calendly.com/contact-zeeframes/30min?month=2026-01"
+                        target="_blank"
                             variant="link"
                             size="default"
                             className="relative group border py-2.5 px-4 border-gray-700 text-white hover:text-[#F3FE00] bg-transparent overflow-hidden"
@@ -88,7 +90,7 @@ const About = () => {
                                 </div>
                             )}
                             </div>
-                            <Link className="sm:px-1.5 px-1 py-1 sm:mt-4 mt-0 rounded-full border border-[#373737] flex items-center gap-1.5" to={item.path} target='blank'>
+                            <Link className="sm:px-1.5 px-1 py-1 sm:mt-4 mt-0 rounded-full border border-[#373737] flex items-center gap-1.5" to={item.path} target='_blank'>
                                 <span className="px-2 py-1 bg-white rounded-full w-fit">
                                     {item.svg}
                                 </span>

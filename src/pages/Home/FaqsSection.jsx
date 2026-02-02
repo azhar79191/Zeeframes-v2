@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import stars from "@/assets/images/clutch-reviews.svg"
 import SectionHeader from '@/components/SectionHeader'
+import { ArrowUp, Minus, Plus } from '@/assets/images'
+import { Link } from 'react-router-dom'
 const faqs = [
     {
         question: "What is UI UX design, and why is it important?",
@@ -44,18 +46,17 @@ const FaqsSection = () => {
                             description="We begin with meaningful conversations that drive design decisions."
                         />
                         <div className='flex items-center gap-8 pt-8'>
-                            <Button onClick={() => window.location.href = "https://calendly.com/contact-zeeframes/30min?month=2026-01"} className="w-47 h-12 bg-white">
+                            <Button href="https://calendly.com/contact-zeeframes/30min?month=2026-01" target="_blank" className="w-47 h-12 bg-white">
                                 <span className="group-hover:hidden flex items-center gap-3 justify-center">
                                     Book a free call
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.10941 1.25C2.94365 1.25 2.78468 1.18415 2.66747 1.06694C2.55026 0.949731 2.48441 0.79076 2.48441 0.625C2.48441 0.45924 2.55026 0.300268 2.66747 0.183058C2.78468 0.0658479 2.94365 0 3.10941 0H10.6094C10.7752 0 10.9341 0.0658479 11.0514 0.183058C11.1686 0.300268 11.2344 0.45924 11.2344 0.625V8.125C11.2344 8.29076 11.1686 8.44973 11.0514 8.56694C10.9341 8.68415 10.7752 8.75 10.6094 8.75C10.4436 8.75 10.2847 8.68415 10.1675 8.56694C10.0503 8.44973 9.98441 8.29076 9.98441 8.125V2.13333L1.05108 11.0667C0.932597 11.1771 0.775892 11.2372 0.613974 11.2343C0.452057 11.2315 0.297569 11.1659 0.183058 11.0514C0.0685473 10.9368 0.00295422 10.7824 9.73728e-05 10.6204C-0.00275947 10.4585 0.057343 10.3018 0.167743 10.1833L9.10108 1.25H3.10941Z" fill="black" />
-                                    </svg>
+                                  <ArrowUp/>
                                 </span>
                                 <span className="hidden group-hover:block">
                                     Lets talk
                                 </span>
                             </Button>
-                            <a href="#"><img src={stars} alt="stars" className='h-12 w-41' loading='lazy' /></a>
+                            <Link href="#"><img src={stars} alt="stars" className='h-12 w-41' loading='lazy' />
+                            </Link>
 
                         </div>
                     </div>
@@ -90,14 +91,9 @@ const FaqsSection = () => {
                                                 }`}
                                         >
                                             {isActive ? (
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                    <path d="M2.66669 8H13.3334" stroke="#0B0B0B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
+                                              <Minus/>
                                             ) : (
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                        <path d="M8 2.66663V13.3333" stroke="#6D6D6D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M2.66669 8H13.3334" stroke="#6D6D6D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
+                                                   <Plus/>
                                             )}
                                         </span>
 

@@ -58,7 +58,7 @@ const VideoSection = () => {
                 variant="destructive"
                 size="destructive"
                 ref={buttonRef}
-                onClick={() => navigate("/contact")}
+              href="/contact"
                 className={`pointer-events-auto absolute top-0 left-0
           transition-opacity duration-300
           ${visible ? "opacity-100" : "opacity-0 pointer-events-none"}

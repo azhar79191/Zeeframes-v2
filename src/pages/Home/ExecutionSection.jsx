@@ -108,10 +108,10 @@ const ExecutionSection = ({ tag, title, image }) => {
         className="relative mx-auto flex max-w-7xl gap-20 sm:px-6 sm:py-24 py-8 md:flex-row flex-col">
       <div className="relative md:w-1/2 w-full">
                     {/* Line */}
-                    <div className="absolute left-0 top-0 h-full w-[2px] bg-white/10 md:block hidden">
+                    <div className="absolute left-0 top-0 h-full w-[2px]  md:block hidden">
                         <motion.div
                             style={{ height: lineHeight }}
-                          className="w-full bg-[#F3FE00]"
+                              className="w-full bg-[#F3FE00]"
                         />
                     </div>
     

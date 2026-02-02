@@ -20,7 +20,7 @@ const DesignSection = () => {
                         At ZeeFrames, we craft AI-ready design systems for modern software responsive, scalable, and human-centered.
                     </p>
 
-                    <Button onClick={() => window.location.href = "https://calendly.com/contact-zeeframes/30min?month=2026-01"} variant="default" size="default" className="relative group  sm:mt-6 mt-9">
+                    <Button href="https://calendly.com/contact-zeeframes/30min?month=2026-01" target="_blank" variant="default" size="default" className="relative group  sm:mt-6 mt-9">
                         <span className="flex items-center gap-3 justify-center transition-opacity group-hover:opacity-0">
                             See AI in Action
                             <Arrowup1/>
