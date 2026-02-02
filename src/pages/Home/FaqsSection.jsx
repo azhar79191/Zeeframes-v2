@@ -69,7 +69,7 @@ const FaqsSection = () => {
                                     key={index}
                                     className={`rounded-xl border transition-all duration-300
           ${isActive
-                                            ? "border-[#F3FE00] bg-[#111111]"
+                                        ? "border-[#F3FE00] bg-[rgba(243,254,0,0.04)]"
                                             : "border-[#1F1F1F] bg-[#0D0D0D]"
                                         }`}
                                 >
