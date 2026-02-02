@@ -58,11 +58,22 @@ const Header = () => {
           </button>
 
           {/* NAV LINKS */}
-          <ul className={`lg:flex gap-8 text-white ${
-            isMobileMenuOpen 
-              ? 'flex flex-col absolute top-full left-0 w-full bg-[#0D0D0D] items-center h-screen' 
-              : 'hidden'
-          }`}>
+         <ul
+  className={`
+    lg:flex gap-4 text-white
+    fixed lg:static
+    top-15 right-0
+    px-6 py-12
+    h-screen w-full
+    bg-[#0D0D0D]
+    flex flex-col items-center lg:justify-center
+    transform transition-transform duration-300 ease-in-out
+    ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}
+    lg:translate-x-0
+    lg:h-auto lg:w-auto lg:flex-row lg:bg-transparent
+  `}
+>
+
             {headerLinks.map((item, index) => {
               const isActive = pathname === item.path || (item.text === "Services" && pathname.startsWith('/services/'));
               const isServices = item.text === "Services";
