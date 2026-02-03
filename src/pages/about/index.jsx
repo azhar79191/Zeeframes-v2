@@ -72,11 +72,11 @@ const About = () => {
                         </Button>
                     </div>
 
-                    <div className='grid sm:grid-cols-4 grid-cols-1 sm:mt-16 mt-8 sm:mb-25 mb-8 gap-4'>
+                    <div className='flex items-center justify-center sm:mt-16 mt-8 sm:mb-25 mb-8 gap-4'>
                         {ratingData.map((item, index) => (
                             <div
                                 key={index}
-                                className="sm:px-5 px-3 py-3 flex sm:flex-col flex-row items-center sm:gap-3 gap-2 rounded-xl border sm:w-fit w-full bg-[#171717] border-[#373737]"
+                                className="sm:px-5 px-3 py-3 flex sm:flex-col flex-row items-center sm:gap-3 gap-2 rounded-xl border sm:w-fit w-full bg-[#171717]  border-[#373737]"
                             >
                                 <div className='flex items-center justify-center sm:gap-2.5 gap-1.5'>
                                     <h2 className="text-[#FFF] text-center whitespace-nowrap sm:text-lg text-base font-semibold leading-[21px] font-['Inter']">
