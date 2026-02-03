@@ -1,38 +1,14 @@
-import { useState } from 'react'
+
 import { Button } from '@/components/ui/button'
 import stars from "@/assets/images/clutch-reviews.svg"
 import SectionHeader from '@/components/SectionHeader'
-import { ArrowUp, Minus, Plus } from '@/assets/images'
+import { Arrowup1, Minus, Plus } from '@/assets/images'
 import { Link } from 'react-router-dom'
-const faqs = [
-    {
-        question: "What is UI UX design, and why is it important?",
-        answer: "UX design, or user experience design, is designing digital products that are easy to use and provide a positive experience for the user. It is important because a good UX design can increase user satisfaction, engagement, and conversions."
-    },
-    {
-        question: "What is the UX design process, and how long does it take?",
-        answer: "UI design, or user interface design, is the visual design of digital products, including the layout, colors, typography, and other elements. It differs from UX design, focusing more on the product's aesthetic appeal and visual aspects. In contrast, UX design focuses on the overall experience of the user."
-    },
-    {
-        question: "What types of UX design services do you offer?",
-        answer: "We offer various UX design services, including UX research, wireframing, prototyping, usability testing, and graphics design. We work closely with our clients to understand their unique needs and goals and provide customized solutions to help them achieve their objectives."
-    },
-    {
-        question: "How does ZeeFrames UI UX Design differ from other design solutions?",
-        answer: "At ZeeFrames, we believe in the power of Human-Computer Interaction and leverage it to make informed, data-driven design decisions that set us apart from the competition. As a leading UI UX design studio in Pakistan, we follow a design strategy that begins with discovering the needs and pain points of users and ends with real user testing for direct feedback. This approach enables us to create user-centric designs that enhance usability, accessibility, and overall user satisfaction.Our design philosophy is simple: put users at the center of everything we do.Whether it's UX research or designing User Flows, Wireframing or Prototyping our team of expert UI UX designers ensure that your users are considered in every phase of designing to deliver outstanding results that meet the unique needs of your business."
-    },
-    {
-        question: "Are there any customer reviews or case studies available for ZeeFrames UI UX Design?",
-        answer: "At ZeeFrames, we take pride in our customer reviews and case studies that showcase our expertise in the UI UX design industry. You can easily access them on our website to get a glimpse of our work and the impact it has had on our clients' businesses. As a top-class UI UX design firm, we have worked with a diverse range of clients worldwide, helping them create engaging and intuitive digital experiences for their customers. With our expertise and user-centered design approach, you can be rest assured as we will take your website design to the next level."
-    }
-]
+import { FAQS } from './Home.constant'
 
-const FaqsSection = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
 
-    const toggle = (index) => {
-        setActiveIndex(activeIndex === index ? null : index);
-    };
+const FaqsSection = ({activeIndex, toggle }) => {
+
     return (
         <section className="py-20 sm:block hidden">
             <div className="container">
@@ -49,7 +25,7 @@ const FaqsSection = () => {
                             <Button href="https://calendly.com/contact-zeeframes/30min?month=2026-01" target="_blank" className="w-47 h-12 bg-white">
                                 <span className="group-hover:hidden flex items-center gap-3 justify-center">
                                     Book a free call
-                                  <ArrowUp/>
+                                    <Arrowup1 />
                                 </span>
                                 <span className="hidden group-hover:block">
                                     Lets talk
@@ -61,15 +37,15 @@ const FaqsSection = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
-                        {faqs.map((item, index) => {
+                        {FAQS.map((item, index) => {
                             const isActive = activeIndex === index;
 
                             return (
                                 <div
                                     key={index}
                                     className={`rounded-xl border transition-all duration-300
-          ${isActive
-                                        ? "border-[#F3FE00] bg-[rgba(243,254,0,0.04)]"
+                                        ${isActive
+                                            ? "border-[#F3FE00] bg-[rgba(243,254,0,0.04)]"
                                             : "border-[#1F1F1F] bg-[#0D0D0D]"
                                         }`}
                                 >
@@ -91,17 +67,17 @@ const FaqsSection = () => {
                                                 }`}
                                         >
                                             {isActive ? (
-                                              <Minus/>
+                                                <Minus />
                                             ) : (
-                                                   <Plus/>
+                                                <Plus />
                                             )}
                                         </span>
 
                                     </button>
                                     <div
                                         className={`grid transition-all duration-300 ease-in-out
-            ${isActive ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}
-          `}
+                                            ${isActive ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}
+                                        `}
                                     >
                                         <div className="overflow-hidden px-5">
                                             <p className="text-base text-[#D5D5D5] leading-6 pb-6">

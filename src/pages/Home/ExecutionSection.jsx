@@ -62,9 +62,9 @@ const processSteps = [
 ];
 
 const ExecutionSection = ({ tag, title, image }) => {
-  const containerRef = useRef(null);
-  const itemRefs = useRef([]);
-  const [activeIndex, setActiveIndex] = useState(null);
+    const containerRef = useRef(null);
+    const itemRefs = useRef([]);
+    const [activeIndex, setActiveIndex] = useState(null);
 
     const { scrollYProgress } = useScroll({
         target: containerRef,
@@ -72,127 +72,127 @@ const ExecutionSection = ({ tag, title, image }) => {
     });
 
 
-  const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+    const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
-  useMotionValueEvent(scrollYProgress, "change", (progress) => {
-    if (!containerRef.current) return;
+    useMotionValueEvent(scrollYProgress, "change", (progress) => {
+        if (!containerRef.current) return;
 
-    const containerHeight = containerRef.current.offsetHeight;
-    const currentLineHeight = progress * containerHeight;
+        const containerHeight = containerRef.current.offsetHeight;
+        const currentLineHeight = progress * containerHeight;
 
-      let newActiveIndex = null;
+        let newActiveIndex = null;
 
-      itemRefs.current.forEach((item, index) => {
-          if (!item) return;
+        itemRefs.current.forEach((item, index) => {
+            if (!item) return;
 
-          const itemTop = item.offsetTop;
+            const itemTop = item.offsetTop;
 
-          if (currentLineHeight >= itemTop) {
-              newActiveIndex = index;
-          }
-      });
+            if (currentLineHeight >= itemTop) {
+                newActiveIndex = index;
+            }
+        });
 
-      setActiveIndex(newActiveIndex);
+        setActiveIndex(newActiveIndex);
 
-  });
+    });
 
-  return (
-    <section className="sm:py-20 py-8">
-        <div className="container">
-          <SectionHeader
-              eyebrow="Our process, Your Advantage"
-              title="From Idea To Execution"
-              description="We have become experts in creating top-notch digital products. We design beautifully and develop excellently. And we care deeply about what we do."
-          />
-      <div ref={containerRef}
-        className="relative mx-auto flex max-w-7xl gap-20 sm:px-6 sm:py-24 py-8 md:flex-row flex-col">
-      <div className="relative md:w-1/2 w-full">
-                    {/* Line */}
-                    <div className="absolute left-0 top-0 h-full w-[2px]  md:block hidden">
-                        <motion.div
-                            style={{ height: lineHeight }}
-                              className="w-full bg-[#F3FE00]"
-                        />
-                    </div>
-    
-                    {/* Cards */}
-                  <div className="space-y-20 md:pl-16 pl-0">
-                      {processSteps.map((step, index) => {
-                          const isActive = activeIndex === index;
+    return (
+        <section className="sm:py-20 py-8">
+            <div className="container">
+                <SectionHeader
+                    eyebrow="Our process, Your Advantage"
+                    title="From Idea To Execution"
+                    description="We have become experts in creating top-notch digital products. We design beautifully and develop excellently. And we care deeply about what we do."
+                />
+                <div ref={containerRef}
+                    className="relative mx-auto flex max-w-7xl gap-20 sm:px-6 sm:py-24 py-8 md:flex-row flex-col">
+                    <div className="relative md:w-1/2 w-full">
+                        {/* Line */}
+                        <div className="absolute left-0 top-0 h-full w-0.5  md:block hidden">
+                            <motion.div
+                                style={{ height: lineHeight }}
+                                className="w-full bg-[#F3FE00]"
+                            />
+                        </div>
 
-                          return (
-                              <div
-                                  key={index}
-                                  ref={(el) => (itemRefs.current[index] = el)}
-                                  className="relative transition-all duration-300"
-                              >
-                                  {/* NUMBER – LEFT OF LINE */}
-                                  {isActive && (
-                                      <div className="absolute -left-25 top-1 text-lg font-semibold text-white transition-opacity duration-300 md:block hidden">
-                                          {String(step.id).padStart(2, "0")}
-                                      </div>
-                                  )}
-                                  <div className="flex gap-1.5">
-                                  {/* NUMBER FOR MOBILE */}
-                                  <div className="md:hidden block text-base font-medium text-[#FFF] mb-2">
-                                      {String(step.id).padStart(2, "0")}
-                                  </div>
-                                  {/* CONTENT */}
-                                  <h3
-                                      className={`text-[19px] font-semibold ff_geologica transition-colors duration-300 md:text-[19px] text-xl
+                        {/* Cards */}
+                        <div className="space-y-20 md:pl-16 pl-0">
+                            {processSteps.map((step, index) => {
+                                const isActive = activeIndex === index;
+
+                                return (
+                                    <div
+                                        key={index}
+                                        ref={(el) => (itemRefs.current[index] = el)}
+                                        className="relative transition-all duration-300"
+                                    >
+                                        {/* NUMBER – LEFT OF LINE */}
+                                        {isActive && (
+                                            <div className="absolute -left-25 top-1 text-lg font-semibold text-white transition-opacity duration-300 md:block hidden">
+                                                {String(step.id).padStart(2, "0")}
+                                            </div>
+                                        )}
+                                        <div className="flex gap-1.5">
+                                            {/* NUMBER FOR MOBILE */}
+                                            <div className="md:hidden block text-base font-medium text-[#FFF] mb-2">
+                                                {String(step.id).padStart(2, "0")}
+                                            </div>
+                                            {/* CONTENT */}
+                                            <h3
+                                                className={`text-[19px] font-semibold ff_geologica transition-colors duration-300 md:text-[19px] text-xl
             ${isActive ? "text-white" : "text-[#8F8F8F]"} md:${isActive ? "text-white" : "text-[#8F8F8F]"} text-white`}
-                                  >
-                                      {step.title.replace(/^\d+\s/, "")}
-                                  </h3>
-                                  </div>
+                                            >
+                                                {step.title.replace(/^\d+\s/, "")}
+                                            </h3>
+                                        </div>
 
-                                  <p
-                                      className={`mt-1 text-lg transition-colors duration-300 md:text-lg text-base
+                                        <p
+                                            className={`mt-1 transition-colors duration-300 md:text-lg text-base
             ${isActive ? "text-white" : "text-[#8F8F8F]"} md:${isActive ? "text-white" : "text-[#8F8F8F]"} text-gray-300`}
-                                  >
-                                      {step.subtitle}
-                                  </p>
+                                        >
+                                            {step.subtitle}
+                                        </p>
 
-                                  <p
-                                      className={`mt-3 max-w-md text-sm transition-colors duration-300 md:text-sm text-sm
+                                        <p
+                                            className={`mt-3 max-w-md text-sm transition-colors duration-300 md:text-sm text-sm
             ${isActive ? "text-white" : "text-[#8F8F8F]"} md:${isActive ? "text-white" : "text-[#8F8F8F]"} text-gray-400`}
-                                  >
-                                      {step.description}
-                                  </p>
-                                  
-                                  {/* Mobile Image */}
-                                  <div className="md:hidden block mt-8">
-                                      <img
-                                          src={step.image}
-                                          className="w-full h-[185px] border border-[rgba(60,60,60,0.72)] rounded-2xl object-cover"
-                                          alt={step.title}
-                                      />
-                                  </div>
-                              </div>
-                          );
-                      })}
-                  </div>
+                                        >
+                                            {step.description}
+                                        </p>
 
-                </div>
-    
-                {/* RIGHT STICKY IMAGE - DESKTOP ONLY */}
-                <div className="sticky top-30 h-126 w-132 md:block hidden">
-                      {activeIndex !== null && (
-                          <motion.img
-                              key={activeIndex}
-                              src={processSteps[activeIndex].image}
-                              initial={{ opacity: 0, y: 25 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              transition={{ duration: 0.45 }}
-                              className="h-full w-full rounded-2xl object-cover"
-                          />
-                      )}
+                                        {/* Mobile Image */}
+                                        <div className="md:hidden block mt-8">
+                                            <img
+                                                src={step.image}
+                                                className="w-full h-[185px] border border-[rgba(60,60,60,0.72)] rounded-2xl object-cover"
+                                                alt={step.title}
+                                            />
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
 
+                    </div>
+
+                    {/* RIGHT STICKY IMAGE - DESKTOP ONLY */}
+                    <div className="sticky top-30 h-126 w-132 md:block hidden">
+                        {activeIndex !== null && (
+                            <motion.img
+                                key={activeIndex}
+                                src={processSteps[activeIndex].image}
+                                initial={{ opacity: 0, y: 25 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.45 }}
+                                className="h-full w-full rounded-2xl object-cover"
+                            />
+                        )}
+
+                    </div>
                 </div>
-      </div>
-          </div>
-  </section>
-  )
+            </div>
+        </section>
+    )
 }
 
 export default ExecutionSection

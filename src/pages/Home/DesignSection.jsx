@@ -23,7 +23,7 @@ const DesignSection = () => {
                     <Button href="https://calendly.com/contact-zeeframes/30min?month=2026-01" target="_blank" variant="default" size="default" className="relative group  sm:mt-6 mt-9">
                         <span className="flex items-center gap-3 justify-center transition-opacity group-hover:opacity-0">
                             See AI in Action
-                            <Arrowup1/>
+                            <Arrowup1 />
                         </span>
 
                         <span className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover:opacity-100">
@@ -31,8 +31,8 @@ const DesignSection = () => {
                         </span>
                     </Button>
                 </div>
-                    <img src={gif} alt="star" className="w-110 h-110" />
-            
+                <img src={gif} alt="star" className="w-110 h-110" />
+
             </div>
         </section>
     )

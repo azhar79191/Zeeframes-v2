@@ -41,8 +41,8 @@ const Workpage = () => {
                 </div>
 
             </section>
-            <IndustriesSection/>
-            <ContactFormSection/>
+            <IndustriesSection />
+            <ContactFormSection />
         </>
     )
 }

@@ -94,7 +94,7 @@ const CardSwipper = () => {
                             ref={nextRef}
                             disabled={isEnd}
                             className={`h-12 px-5 rounded-full border transition
-      ${isEnd
+                             ${isEnd
                                     ? "cursor-not-allowed bg-[#555555] border-none text-gray-600"
                                     : "bg-[#F3FE00] border-[#F3FE00] text-black hover:opacity-90"
                                 }`}

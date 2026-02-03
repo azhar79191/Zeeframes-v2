@@ -50,7 +50,7 @@ function Button({
   rel,
   ...props
 }) {
-  // 1️⃣ Internal Link (React Router)
+  // Internal Link (React Router)
   if (to) {
     return (
       <Link
@@ -61,7 +61,7 @@ function Button({
     )
   }
 
-  // 2️⃣ External Link
+  //  External Link
   if (href) {
     return (
       <a
@@ -74,7 +74,7 @@ function Button({
     )
   }
 
-  // 3️⃣ Normal Button / Slot
+  //  Normal Button / Slot
   const Comp = asChild ? Slot : "button"
 
   return (

@@ -1,6 +1,6 @@
 import { ArrowUp, Clutch, Derrible, Star, Verified, Webflow } from '@/assets/images'
 import React from 'react'
-import {America,Europe} from "@/assets/images/index"
+import { America, Europe } from "@/assets/images/index"
 import { Button } from '@/components/ui/button'
 import Team from "@/assets/images/team.webp"
 import AboutSection from './AboutSection'
@@ -14,17 +14,17 @@ const ratingData = [
     {
         rating: "4.9 Rating",
         svg: <Clutch />,
-        path:"https://clutch.co/profile/zeeframes"
+        path: "https://clutch.co/profile/zeeframes"
     },
     {
         rating: "Best in",
         flags: [<America key="us" />, <Europe key="eu" />],
         svg: <Clutch />,
-        path:"#"
+        path: "#"
     },
     {
-        rating:"150 M Views",
-        svg: <Derrible/>,
+        rating: "150 M Views",
+        svg: <Derrible />,
         path: "#"
     },
     {
@@ -37,6 +37,7 @@ const ratingData = [
 ];
 
 const About = () => {
+
     return (
         <>
             <section>
@@ -51,8 +52,8 @@ const About = () => {
 
                     <div className="sm:mt-8 mt-6 flex justify-center mx-auto">
                         <Button
-                        href="https://calendly.com/contact-zeeframes/30min?month=2026-01"
-                        target="_blank"
+                            href="https://calendly.com/contact-zeeframes/30min?month=2026-01"
+                            target="_blank"
                             variant="link"
                             size="default"
                             className="relative group border py-2.5 px-4 border-gray-700 text-white hover:text-[#F3FE00] bg-transparent overflow-hidden"
@@ -72,53 +73,53 @@ const About = () => {
                     </div>
 
                     <div className='grid sm:grid-cols-4 grid-cols-1 sm:mt-16 mt-8 sm:mb-25 mb-8 gap-4'>
-                    {ratingData.map((item, index) => (
-                        <div
-                            key={index}
-                            className="sm:px-5 px-3 py-3 flex sm:flex-col flex-row items-center sm:gap-3 gap-2 rounded-xl border sm:w-fit w-full bg-[#171717] border-[#373737]"
-                        >
-                            <div className='flex items-center justify-center sm:gap-2.5 gap-1.5'>
-                            <h2 className="text-[#FFF] text-center whitespace-nowrap sm:text-lg text-base font-semibold leading-[21px] font-['Inter']">
-                                {item.rating}
-                            </h2>
+                        {ratingData.map((item, index) => (
+                            <div
+                                key={index}
+                                className="sm:px-5 px-3 py-3 flex sm:flex-col flex-row items-center sm:gap-3 gap-2 rounded-xl border sm:w-fit w-full bg-[#171717] border-[#373737]"
+                            >
+                                <div className='flex items-center justify-center sm:gap-2.5 gap-1.5'>
+                                    <h2 className="text-[#FFF] text-center whitespace-nowrap sm:text-lg text-base font-semibold leading-[21px] font-['Inter']">
+                                        {item.rating}
+                                    </h2>
 
-                            {item.flags && (
-                                <div className="flex items-center sm:gap-1 gap-0.5">
-                                    {item.flags.map((flag, i) => (
-                                        <span key={i}>{flag}</span>
-                                    ))}
+                                    {item.flags && (
+                                        <div className="flex items-center sm:gap-1 gap-0.5">
+                                            {item.flags.map((flag, i) => (
+                                                <span key={i}>{flag}</span>
+                                            ))}
+                                        </div>
+                                    )}
                                 </div>
-                            )}
+                                <Link className="sm:px-1.5 px-1 py-1 sm:mt-4 mt-0 rounded-full border border-[#373737] flex items-center gap-1.5" to={item.path} target='_blank'>
+                                    <span className="px-2 py-1 bg-white rounded-full w-fit">
+                                        {item.svg}
+                                    </span>
+
+                                    <p className="font-['Inter'] text-sm whitespace-nowrap text-[#D5D5D5] leading-4">
+                                        Reviewed on
+                                    </p>
+
+                                    <span className="px-3 py-1 rounded-full border border-[#B5B5B5] text-center">
+                                        <ArrowUp />
+                                    </span>
+                                </Link>
                             </div>
-                            <Link className="sm:px-1.5 px-1 py-1 sm:mt-4 mt-0 rounded-full border border-[#373737] flex items-center gap-1.5" to={item.path} target='_blank'>
-                                <span className="px-2 py-1 bg-white rounded-full w-fit">
-                                    {item.svg}
-                                </span>
-
-                                <p className="font-['Inter'] text-sm whitespace-nowrap text-[#D5D5D5] leading-4">
-                                    Reviewed on
-                                </p>
-
-                                <span className="px-3 py-1 rounded-full border border-[#B5B5B5] text-center">
-                                    <ArrowUp />
-                                </span>
-                            </Link>
-                        </div>
-                    ))}
+                        ))}
 
                     </div>
                 </div>
 
             </section>
             <section className='sm:sticky  top-10'>
-                <img src={Team} alt="Team thumbnail" width="1441" height="677" className='w-full object-cover h-auto' defer/>
+                <img src={Team} alt="Team thumbnail" width="1441" height="677" className='w-full object-cover h-auto' defer />
             </section>
-            <AboutSection/>
-            <MissionSection/>
-            <SliderSection/>
-            <ValueSection/>
-            <TeamSection/>
-            <ReviewSection/>
+            <AboutSection />
+            <MissionSection />
+            <SliderSection />
+            <ValueSection />
+            <TeamSection />
+            <ReviewSection />
         </>
     )
 }

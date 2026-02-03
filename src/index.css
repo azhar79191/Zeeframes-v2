@@ -128,7 +128,7 @@
 }
 
 body {
-font-family:"Inter", system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 .ff_geologica {
@@ -155,6 +155,7 @@ font-family:"Inter", system-ui, sans-serif;
   width: max-content;
   animation: logo-scroll 10s linear infinite;
 }
+
 .team-slider {
   display: flex;
   width: max-content;
@@ -202,24 +203,25 @@ font-family:"Inter", system-ui, sans-serif;
   }
 }
 
-.main-heading{
-  color:  #F3FE00;
-    text-align: start;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
+.main-heading {
+  color: #F3FE00;
+  text-align: start;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
 }
-.description{
+
+.description {
   color: var(--white, #FFF);
-    font-family: Geologica;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 46px;
-    max-width: 981px;
-    width:100%;
+  font-family: Geologica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 46px;
+  max-width: 981px;
+  width: 100%;
 }
 
 
@@ -266,7 +268,8 @@ font-family:"Inter", system-ui, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 3;;
+  z-index: 3;
+  ;
   text-decoration: none;
 }
 
@@ -303,6 +306,11 @@ font-family:"Inter", system-ui, sans-serif;
 
 .wave-1 {
   animation-delay: 100s;
+}
+
+button,
+a {
+  cursor: pointer;
 }
 
 /* .wave-2 {

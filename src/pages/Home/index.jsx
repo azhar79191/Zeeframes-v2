@@ -9,8 +9,12 @@ import ContactFormSection from "@/pages/Home/contactFormSection";
 import VideoSection from "./VideoSection";
 import CursorGlow from "@/components/CursorGlow";
 import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
+import useHome from "./useHome";
 
 const HomeView = () => {
+
+  const { activeIndex, toggle } = useHome()
+
   return (
     <>
       <CursorGlow />
@@ -20,7 +24,7 @@ const HomeView = () => {
       <ExecutionSection />
       <ShowcaseSection />
       <DesignSection />
-      <FaqsSection />
+      <FaqsSection activeIndex={activeIndex} toggle={toggle} />
       <InsightSection />
       <ContactFormSection />
 
