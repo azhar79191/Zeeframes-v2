@@ -140,7 +140,7 @@ const Footer = () => {
                       
             </div>
                   </div>
-                  <div className='md:p-6 p-4 bg-[#171717] grid md:grid-cols-4 grid-cols-1 md:gap-4 gap-6 rounded-2xl mt-8.5 mb-8'>
+                  <div className='md:p-6 p-4 bg-[#171717] grid md:grid-cols-4 grid-cols-1 md:gap-4 gap-6 mt-8.5 mb-8'>
                     <Footercard
                     svg={America}
                           title={"North America"}
