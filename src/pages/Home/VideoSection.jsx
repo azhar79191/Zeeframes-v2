@@ -49,7 +49,7 @@ const VideoSection = () => {
         >
             <video
                 src="/video/mainvideo-CmL3Olfo.mp4"
-                className="w-full h-full object-cover"
+                className="w-full h-[90vh] object-cover"
                 autoPlay
                 muted
                 loop
