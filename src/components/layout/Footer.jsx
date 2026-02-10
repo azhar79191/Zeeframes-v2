@@ -84,7 +84,7 @@ const SocialLinks = [
 ]
 const Footer = () => {
   return (
-      <footer className='py-8 border-t border-[#2A2A2A]'>
+      <footer className='py-8 border-t border-[#2A2A2A] bg-[#090909]'>
     <div className="container">
         <div className="footer-content">
             <div>

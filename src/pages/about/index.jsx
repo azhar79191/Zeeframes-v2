@@ -40,7 +40,7 @@ const About = () => {
 
     return (
         <>
-            <section>
+            <section className='bg-[#090909]'>
                 <div className='container'>
                     <div className='flex relative items-center flex-col sm:gap-3 gap-4 justify-between sm:mt-20 mt-8'>
                         <h1 className=" text-white sm:text-7xl text-4xl max-w-182 text-center font-extrabold sm:leading-24 leading-12.5 items-center font-['Geologica'] uppercase">A Strategic UI UX Design Agency</h1>
@@ -72,7 +72,7 @@ const About = () => {
                         </Button>
                     </div>
 
-                    <div className='flex items-center justify-center sm:mt-16 mt-8 sm:mb-25 mb-8 gap-4'>
+                    <div className='flex sm:flex-row flex-col  items-center justify-center sm:mt-16 mt-8 sm:mb-25 mb-8 gap-4'>
                         {ratingData.map((item, index) => (
                             <div
                                 key={index}

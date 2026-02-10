@@ -23,7 +23,7 @@ const cardsData=[
 
 const ReviewSection = () => {
   return (
-      <section className='sm:py-20 py-8 bg-[#0D0D0D] relative z-50'>
+      <section className='sm:py-20 py-8 bg-[#090909] relative z-50'>
         <div className='container'>
             <div className='grid sm:grid-cols-3 grid-cols-1 gap-18 sm:mx-60'>
             {cardsData.map((item,index)=>(

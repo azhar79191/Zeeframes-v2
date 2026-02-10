@@ -39,8 +39,13 @@ const Header = () => {
     }
   }, [location]);
 
+  // Hide mega dropdown on route change
+  useEffect(() => {
+    setShowMega(false);
+  }, [pathname]);
+
   return (
-    <header className="bg-[#0D0D0D] sticky top-0 z-70">
+    <header className="bg-[#0D0D0D] sticky top-0 z-70 ">
         <nav className="flex items-center justify-between  py-5 sm:py-5.5 px-4 sm:px-20 relative">
 
           {/* LOGO */}
@@ -103,7 +108,7 @@ const Header = () => {
                     </span>
 
                     {isActive && (
-                      <span className="absolute left-2 -bottom-1 w-7 h-[2px] bg-[#F3FE00] rounded-full"></span>
+                      <span className="absolute left-3 -bottom-1 w-6 h-[2px] bg-[#F3FE00] rounded-full"></span>
                     )}
                   </Link>
 

@@ -16,7 +16,7 @@ const cardsdata=[
 ]
 const AboutSection = () => {
   return (
-      <section className='sm:py-20 py-8 relative z-50 bg-[#0B0B0B]'>
+      <section className='sm:py-20 py-8 relative z-50 bg-[#090909]'>
         <div className='container'>
             <div className='wrapper flex sm:flex-row flex-col  items-start gap-20'>
                 <img src={about} alt="about" width="390" height="391" className='h-auto object-contain max-w-full'/>

@@ -9,7 +9,7 @@ const logos = [swipper1, swipper2, swipper3, swipper4, swipper5,swipper1, swippe
 
 const SliderSection = () => {
   return (
-      <section className='py-20 relative z-50 bg-[#0B0B0B]'>
+      <section className='py-20 relative z-50 bg-[#090909]'>
           <SectionHeader eyebrow="our culture" title="Behind The Scenes" description="We believe in clear communication, proactive problem solving, and full transparency.." />
 
           <div className="overflow-hidden relative">
