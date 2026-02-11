@@ -39,8 +39,9 @@ const ValueSection = () => {
                     <p className='main-heading ff_geologica'>Our Value</p>
                     <p className='description mb-20'>Together, we make perfect partners. We offer worry-free partnerships and deliver your vision into reality with our top-tier creativity. No fluff, just the good stuff.</p>
                 </div>
+                <div className='rounded-lg bg-[#0D0D0D]'>
                 {valuesData.map((item, index) => (
-                    <div className='flex flex-col px-6 py-8 bg-[#0D0D0D]' key={index}>
+                    <div className='flex flex-col px-6 py-8 ' key={index}>
                         <div className='flex sm:flex-row flex-col justify-between sm:gap-20 gap-6 items-center'>
                             <div className='flex items-center  sm:gap-20 gap-3'>
                                 <h2 className="text-lg text-[#FFF] font-inter">
@@ -70,7 +71,7 @@ const ValueSection = () => {
                         </div>
                     </div>
                 ))}
-
+</div>
             </div>
         </section>
     )

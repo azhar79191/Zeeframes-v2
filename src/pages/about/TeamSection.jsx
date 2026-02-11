@@ -91,7 +91,7 @@ const TeamSection = () => {
               <SectionHeader eyebrow="our team" title="Meet the people behind the magic" description="Rest assured. Your project is in good hands." align='center'/>
               </div>
               <div className='container'>
-              <div className='flex sm:flex-row flex-col justify-between sm:gap-auto gap-6 sm:ml-[310px] sm:mt-17.5 relative z-30'>
+              <div className='flex sm:flex-row flex-col justify-between sm:gap-auto gap-6 sm:ml-[260px] sm:mt-17.5 relative z-30'>
               {teamData.map((item, index) => (
                   <div
                       key={index}
@@ -112,7 +112,7 @@ const TeamSection = () => {
                   </div>
               ))}
               </div>
-              <div className='flex sm:flex-row flex-col justify-between sm:gap-auto gap-6 sm:mr-102 sm:mt-17.5 mt-6 relative z-30'>
+              <div className='flex sm:flex-row flex-col justify-between sm:gap-auto gap-6 sm:mr-90 sm:mt-17.5 mt-6 relative z-30'>
                   {teamData2.map((item, index) => (
                       <div
                           key={index}
